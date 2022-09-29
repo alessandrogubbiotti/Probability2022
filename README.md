@@ -1,2 +1,2 @@
-# Course of Probability at HSE for beginners 
-Course of Probability Theory for beginners 
+# Probability Theory for beginners
+Course at HSE, Fall 2022  
