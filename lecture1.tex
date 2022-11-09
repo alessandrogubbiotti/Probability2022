@@ -606,45 +606,11 @@ In a less obscure way, if $E=\{\omega_1,...,\omega_k\}$, then $\mathbb{P}(E)=\ma
 	
 	\end{example}
 
+\textbf{example} When in exercises we say that a random person is chosen between a group of, say, 20 people, we mean that we are assigning to the experiment $\Omega=\{1,...,20\}$, where 1=" Person 1 has been chosen",...,20= "Person 20 has been chosen", the uniform probability. That is 
+\bel{e:ru}{\mathbb{P}(1)=...=\mathbb{P}(20)=\frac{1}{20}.}
+If among them 3 people wear hat, then the probability of finding choosing one person that wears a hat is $3/20$, asd does not depend whether the ones who wear a hat are $\{1,2,3\}$ or $\{5,17,19\}$. \\
 
 
-\end{document}
-
-
-
-
-\section{Subjective character of probability}
-
-We will consider the probability as a subjective object: It depends on the individual and on its state of information. Imagine a football match. Different individuals will make different previsions, and if you come to know some information about the match, such as that some player got injuried, your prevision will change conseuently. A rigorous way to see how probability changes once you know that an event has happened is given by the conditional probability \eqref{d:cond}
-
-\section{Definition of probability}
-
-
-\begin{definition}[Probability]
-Let $\Omega=\{\omega_1,...,\omega_n\}$ be the sample space of a system. A probability $\mathbb{P}$ is a function that associates to each event $E\subset \Omega$ a number $\mathbb{P}(E)\in[0,1]$ whose meaning is the probability of the event $E$, such that on elementary events 
-\bel{c:prob}{\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_n)=1, }
-and whose value on a general event $E$ is determined by the value it takes on the elementary events $\omega_i$ by the formula 
-\bel{d:prob}{\mathbb{P}(E)=\sum_{\omega\in E }\mathbb{P}(\omega).}
-Formula \eqref{d:prob} for an event $E=\{\omega_{i_1},...,\omega_{i_k}\}$ means $\mathbb{P}(E)=\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_k)$. 
-\end{definition}
-
-\commento{How many possble probabilities you can choose? As a consequence? of formula \eqref{d:prob}, $\mathbb{P}$ is determined  once $\mathbb{P}(\omega_i)$ have been chosen. However, the numbers $\mathbb{P}(\omega_i)$ must be numbers between 0 and 1 that satisfy the condtion \eqref{c:prob}. A constructive approach to choose a probability would be the following: first choose $\mathbb{P}(\omega_1)=p_1$, where p_1 is a number between 0 and 1, then choose $\mathbb{P}(\omega_2)=p_2$, a number between $0 and 1-p_1$, ...., at the end choose $\mathbb{P}(\omega_n)=1-p_1-...-p_{n-1}$. }
-
-
-\subsection{Uniform probability}
-Assume you have an experiment whose sample space is $\Omega=\{\omega_1,...,\omega_n\}$ and that each $\omega_i$ is equally probable. That is, we assume that there exists $c\in [0,1]$ such that $\mathbb{P}(\omega_i)=c$ for every $i=1,..n$. By relation 
-\eqref{e:p1}, one has that 
-$$1=\sum_{i=1}^n\mathbb{P}(\omega_i)=\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_n)=c+....+c=nc,$$
-which means that $c=\frac{1}{n}$ and that $\mathbb{P}(\omega)=1/n$. 
-\begin{definition}
-The uniform probability on $\Omega$ is the probability that on elementary events assumes the value $1/n$:
-\bel{uni}{\mathbb{P}(\omega_i)=\frac{1}{n}.}
-Given $A\subset \Omega $ be an event, we denote by $|A|$ its cardinality, that's it, the number of elements in $A$. The uniform probability of the event $A$ is 
-\bel{e:unif}{\mathbb{P}(A)=\frac{|A|}{|\Omega|}.} (The proof of this last claim is the following exercise)
-\end{definition}
- \textbf{Exercise:} Prove formula \eqref{e:unif}\\
- \textbf{Solution}
- Let $\Omega=\{\omega_1,..,\omega_n\}$ be the sample space, and $A\subset \Omega$ an event with $k$ elements. We endow $\Omega$ with the uniform probability, for which $\mathbb{P}(\omega_i)=1/n$ for every $i$. We have to prove that $\mathbb{P}(A)=k/n$. Without loss of generality we can assume that $A=\{\omega_1,...,\omega_k\}$; thus $\mathbb{P}(A)=\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_k)=1/n+...+1/n=k/n$.\\ 
 \textbf{Example 1}: The roll of two fair dice. The sample space is $\Omega=\{(1,1),(1,2)....(6,6)\}=\{(i,j)\,:\, i,j=1,...6\}$ and, endow it with the uniform probability (For one die, the uniform probability is justified by its fairness. For two fair dice, the uniform probability is justified by independece: we will be explain in subsection \ref{ss:independence}). That is:
 \bel{dice}{\mathbb{P}((i,j)=\frac{1}{|\Omega|}=\frac{1}{36}}
 The probability of the event "The sum of the two dices is 3", which can be seen as the subset of $\Omega$ $A_3=\{(i,j)\in\Omega\,:\,i+j=3\}$, is 
@@ -660,19 +626,11 @@ One can compute the probability of the events $A_n=$(The sum of the result of th
 
 \textbf{Example 2}: Now consider the experiment in which we throw two dice and we just look at the sum of the results. If our imaginary detector could only see the sum of the results and not the result of each die singularly, then $A_2$,...,$A_{12}$ would be the elementary event of this experiment.  The probability of this experiment would be given by \eqref{sum}.
 
-%\textbf{Example 3}: If 3 balls are randomly drawn  from a bowl containing 6 white and 5 black balls. What is the probability that 1 of them is white and the other two black? 
-%\comment{A random draw means that each of the 11 balls is extracted with the same probability. The meaning of two or more random draws is actually this one: the draws are random and independent. What independent draws means will be made clear in subsection \eqref{ss:independence}. For now we just use that each of the $11\times10 \times 9$ ways to extract three balls in the bowl is equally probable. }
-
-\textbf{example} When in exercises we say that a random person is chosen between a group of, say, 20 people, we mean that we are assigning to the experiment $\Omega=\{1,...,20\}$, where 1=" Person 1 has been chosen",...,20= "Person 20 has been chosen", the uniform probability. That is 
-\bel{e:ru}{\mathbb{P}(1)=...=\mathbb{P}(20)=\frac{1}{20}.}
-If among them 3 people wear hat, then the probability of finding choosing one person that wears a hat is $3/20$, asd does not depend whether the ones who wear a hat are $\{1,2,3\}$ or $\{5,17,19\}$. \\
-
-
 \textbf{Extract coloured balls from a bowl} In a bowl there are 3 blue balls and 1 red ball. What is the probability of extracting a red ball? This is intuivley $1/4$. In fact, if we label each one of the blue ball by $b_1,\mb_2,b$ or $b_3$, then the state space is $\Omega=\{b_1,b_2,b_3, r\}.$ Extract a ball randomly means that we put the uniform probability measure on $\Omega$. The event b="A blue ball is extracted"$=\{b_1,b_2,b_3\}$ has probability 
 $$\mathbb{P}(b)=3/4.$$
 Note that if our particles are not labelled and we can distinguish them only by their colour, the state space becomes $\Omega=\{b,r\}$ and the probability is $\mathbb{P}(b)=3/4$ and $\mathbb{P}(r)=1/4$.
 
-\subsection{Exercise}
+
 \textbf{Exercise 1:} A coin is tossed 4 times. Recall that the state space is $\Omega=\{0000,0001,...,1111\}$, where 1 means head. Suppose that the probability on $\Omega$ is uniform (we will see in section 5 that this is due to independence of each coin toss). Calculate the probability of the events 
 \begin{enumerate}
     \item The first toss gave 1 
@@ -691,19 +649,191 @@ We throw two dice, and we suppose that the each output has the same probability 
     %\item Notice that if we throw simultaneously the two dice and we cannot tell which die gave the specific resut, the elementary events are  of the form " a 2 and a 4 appeared"=$\{2,4\}$. Elements of the form $\{i,j\}$ are called unordered pairs, since $\{i,j\}=\{j,i\}$. Show that there are 18 different unordered pairs.
 \end{enumerate}
 
-\commento{ You can think of a probability as a way to count the elementary events that compose an event weighting differently each elementary event. In the particular case where  all the elementary events weight the same, that is, $\mathbb{P}(\omega_i)=1/n$ where $n$ is the number of elements of $\Omega$, we obtain the uniform probability.}
+\subsection{Basic properties}
+Let $\Omega$ be a sample space and $\mathbb{P}$ a probability defined on it. 
+\begin{proposition}
+\label{p1}
+\bel{e:normalization}{\mathbb{P}(\Omega)=1}
+\end{proposition}
+\begin{proof}
+$$\mathbb{P}(\Omega)=\mathbb{P}(\{\omega_1,\omega_2,...,\omega_n\})=\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_n)=1,$$
+which is exactly the reason why we have imposed \eqref{e:p1}
+\end{proof}
+\begin{proposition}
+If $A$ and $B$ are two disjoint events ( in jargon, \emph{mutually exclusive} events)  ($A\cap B=\emptyset$), then 
+\bel{e:add}{
+\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B).}
+\end{proposition}
+More generally, the following relation holds
+\begin{proposition}
+Let $A,\, B\subset \Omega$ be two events. 
+\bel{e:union}{\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cap B)}
+\end{proposition}
+\textbf{Exercise:} The probability that tomorrow will rain is 0.7, the probability that tomorrow will snow is 0.5, the probability that tomorrow will both snow and rain is 0.3. What is the probability that tomorrow will rain or snow? \\
+\textbf{Example: } We roll three dice and give to the sample space the uniform probability. A="The first two dice have the same result", B=" "  . Verify relation \eqref{e:union}  \\
+The sample space is $\Omega=\{(1,1,1),(1,1,2)...,(6,6,6)\}$, which contains $6\times6\times 6$ elements. The event $A=\{(i,j,k)\,:\, i=j\}=\{(i,i,k)\,:\,i,k\in\{1,2,3,4,5,6\}\}$ has $6\times 6$ elements, and the same is true for the event $B=\{(i,j,j)\,:\,i,j\in\{1,2,3,4,5,6\}\}$. $A\cap B=\{(1,1,1),(2,2,2),...,(6,6,6)\}$ has 6 elements. The number of elements of $A\cup B$ is the number of elements of $A$ plus the number of elements of $B$, and we have to subtract the repetition, that is , the number of elements of $A\cap B$. In total $A\cup B$ has $6\times 6+6\times 6-6= 6\times 11=66$ elements.
+The relation \eqref{e:union} with these numbers reads as 
+$$
+66/(6\times 6\times 6)=(6\times 6)/(6\times 6 \times 6)+(6\times 6)/(6\times 6 \times 6)-6/(6\times 6 \times 6).
+$$
+This example shows why formula \eqref{e:union} is true. If $A$ and $B$ are not mutually exclusive, the elementary events that are both in $A$ and in $B$ are the ones in $A\cap B$. When computing the expression $\mathbb{P}(A)+\mathbb{P}(B)$ we count those events twice, while in $\mathbb{P}(A\cup B)$ they count only once.
+\begin{proof}
+Let $\Omega=\{\omega_1,...,\omega_n\}$ be the sample space. Without loss of generality, we assume that $A=\{\omega_1,...,\omega_s,\omega_{s+1}...,\omega_l\}$, and that $B=\{\omega_1,...,\omega_s,\omega_{l+1},...,\omega_{l+m}\}$. In this way, $A\cap B=\{\omega_1,...,\omega_s\}$, and $A\cup B=\{\omega_1,...\omega_{l+m}\}$. Using the definition of probability 
+$$\mathbb{P}(A)=\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_s)+\mathbb{P}(\omega_{s+1})+...+\mathbb{P}(\omega_l),$$
+$$
+\mathbb{P}(B)=\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_s)+\mathbb{P}(\omega_{l+1})+...+\mathbb{P}(\omega_{l+m})
+$$
+and 
+$$\mathbb{P}(A\cap B)=\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_s).$$
+In this way, $$\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cap B)=\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_s)+\mathbb{P}(\omega_{s+1})+...+\mathbb{P}(\omega_{l+m})=\mathbb{P}(A\cup B).$$
+\end{proof}
+\begin{corollary}[Monotonicity]
+Let $A$ and $B$ be two events $A,B\subset\Omega$. If $A\subset B$, then 
+\bel{}{\mathbb{P}(A)\leq\mathbb{P}(B).}
+\end{corollary}
+The monotonicity is a very intuitive property. The probability that today's weather is bad is greater than the probability that today there is a storm. 
+\begin{corollary} 
+Let $A\subset \Omega$ be an event. The 
+\bel{e:compl}{\mathbb{P}(A^c)=1-\mathbb{P}(A),}
+\end{corollary}
+\begin{proof}
+Apply the previous proposition with $B=A^c$.
+\end{proof}
+Also this property is very natural. The probability that I will pass the test is 0,6. Thus, the probability that I will not pass the test is $0.4$,
+\subsection{Exercises}
 
-\subsection{Combinatorics}
-The task of counting how many elements are there in a set can be difficult. 
 
-\subsection{Basic Properties of $\mathbb{P}$. }
+\textbf{Exercise 1} (Symmetric Bernoulli Trials) We toss a coin 9 times. We describe the sample space as follows $\Omega=\{(x_1,...,x_{10}\,:\, x_i\in\{0,1\} \textit{for } i=1,...,10\}$, that is, the set of all possible arrays $(0,0,...,0), (0,0,....,1)$ etc. etc., where 1 means heads and 0 tails. We use the uniform probability (a reason why we do that will be find in the subsection \ref{ss:independence}). 
+\begin{enumerate}
+    \item What is the probability all the coin tosses gave head? 
+ 
+    \item What is the probability that only 1 coin toss gave heads?
+ 
+    \item What is the probability that at most 1 coin toss gave heads?
+    
+    \item What is the probability that at least 8 coin tosses gave heads? 
+    
+    \item What is the probability that less or equal than 4 coin tosses gave heads?  (Hint: Use the fact that this event has the same number of elements of its complementary, so that you don't need combinatorics).
+\end{enumerate}
+
+\textbf{Exercise 2} (\cite{Ross} Chapter 2 Exercise 10) Sixty percent of students at a certain school wear neither a ring nor a necklace. Twenty percent wear a ring and 30 percent wear a necklace. If one of the students is chosen randomly, what is the probability that one of the students is wearing 
+\begin{enumerate}
+    \item A ring or a necklace
+    \item A ring and a necklace
+\end{enumerate}
+\textbf{Solution} The data in the statement means that, if we choose randomly (with uniform probability) a student, then the events A="The student wears a necklace" and  B="The student wears a ring" have probability 
+\bel{}{\mathbb{P}(A) & =0,3\\
+ \mathbb{P}(B) &=0,2.}
+ The event "the student doesn't wear neither a ring nor a necklace" can be written as $(A\cup B)^c=A^c\cap B^c.$. Thus 
+ $$\mathbb{P}((A\cup B)^c)=0.6 .
+ $$
+ Using \eqref{e:compl}, we obtain that 
+ $$ \mathbb{P}((A\cup B))=0.4 ,$$
+ which solves the first point. 
+ Thus, using formula \eqref{e:union} we obtain that 
+ $$\mathbb{P}(A\cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cap B)$$
+ implies that 
+ $$ \mathbb{P}(A\cap B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A\cup B)=0.2+0.3-0.4=0.1.$$
+\textbf{Exercise 3} (\cite{Ross} Chapter 2 Exercise 12) An elementary school is offering 3 lenguage classes, 1 in Spanish, one in French, and one in German. The classes are open to any of the 100 students in the school. There are 28 students in the Spanish class, 26 in the French class, 16 in the German class. There are 12 students who are in both Spanish and French, 4 who are in both French and German, and 6 that are in both Spanish and German. In addition there are 2 students taking all 3 classes.
+\begin{enumerate}
+\item If a student is chosen randomly. What is the probability that he or she is not in any lenguage classes?
+\item If a student is chosen randomly, what is the probability that he or she is taking exactly one lenguage class?
+\item If two students are chosen randomly, what is the probability that at least 1 is taking a lenguage class? 
+\comment{To choose a random student means that each student id equally probable to be chosen. Two random choices of students means that we choose one student and then another one from the 99 remaining students independently and with uniform probability. We will see in Section \ref{e:independence}  that each of the $100\times 99/2$ ways to choose two students are equally like. That is, you can do the exercise using the uniform probability on the space of possible choices of two students, and this probability will be justified in next section \ref{e:independence} with the hypothesis of independence. We will correct this exercise in class.}
+\end{enumerate}
+
+\textbf{Exercise 4} (\cite{Ross} Chapter 2 Exercise 17)  
+If 8 rooks (castles) are randomly (We assume that we are using the uniform probability on the sample space. Why this is done will be clear in Section 7) placed in a chessboard, compute the probability that none of the rooks can capture any of the others. That is, compute the probability that no row or file contains more than one rook. (Hint: to count the number of ways you can place the rooks, try to place one, then place another, and so on, so on).  \\
+
+\textbf{Solution:} 
+Hint: Before doing the exercise for 8 rooks in a $8\times 8$ chessboard, do it for 2 rooks on a $2\times 2$ chessboard.  \\
+We will count all the possible ways to place 8 (distinguishable) rooks in a chessboard. First place the first rook: you 64 possibilities. Then place the other one: you have 64-1=63 possibilities ( 64 places minus the one which is already occupied). For the third you have 64-2=62 possibilities.... For the 8-th one you have 64-(8-1)=57 possibilities. In total, the number of ways you can place the rooks is $64\times 63\times...\times 57$. The number of configurations in which the rooks can be placed in such a way that any of them can capture any of the other can be counted in a similar way. First place the first tower: you have 64 possibilities. Then place the second: you have $7\times 7$ possibilities (the whole chessboard minus the row and the column where the first rook is). For the third you have $6\times 6$ possibilities... \\
+The solution is thus 
+\bel{}{\frac{8\times8\times7\times7\times6\times6...\times1\times1}{64\times63\times...\times57}=\frac{(8!)^2}{64\times 63\times...\times 57}}
+We are implicitly using the following sample space :
+number the 8 rooks from 1 to 8 and the 64 places in the chessboard from 1 to 64. Denote $x_1$ the place of the first rook, by $x_2$ the place of the second, and so on. Since two different rooks are in different places $x_i\neq x_j$ if $i\neq j$. A configuration of rooks is $(x_1,...,x_8)$, where $x_i\in\{1,...,64\}$ and $i=1,...8$. Thus, the state space of placing  8 rooks in a chessboard is  
+\bel{}{\Omega=\{(x_1,...,x_8)\,:\,x_i\neq x_j \textrm{ if } i\neq j\}.}
+What we have proved is that the number of elements in $\Omega$ is $|\Omega|=64\times63\times,...\times 57$
+($\Omega$ is the space of 8 extractions (one for each rook)  of 64 elements (positions in the chessboard) without replacement (two rooks cannot have the same position) 
+\section{Conditional probability}
+We have said that the probability that we put in a system depends on the information that we have about the system. Suppose we observe an event $A$, how this fact modifies the probability of the other events? Think of this example: The probability of the event "A.C. Milan wins the Champions League", changes if the event "Ibrahimovich gets injured" happens. 
+Let $\Omega=\{\omega_1,...,\omega_n\}$ be the sample space and $A\subset \Omega\}$ be an event. Assume that $A=\{\omega_1,...,\omega_k\}$. Suppose that we have observed $A$, so we know that one between $\omega_1$,...,$\omega_k$ has happened. The new probability will be denoted by $\mathbb{P}(\cdot|A)$ and, of course, has to satisfy $\mathbb{P}(\omega|A)=0$ if $\omega\notin A$. If $\omega\in A$, what is the probability that $\omega$ has happened, knowing that $A$ has happened? We want to keep the proportions given by $\mathbb{P}$ on $A$. Thus we just pose $\mathbb{P}(\omega|A )=c \mathbb{P}(\omega)$, where $c$ is a constant. How do we determine $c$? $\mathbb{P}(|A)$ has to satisfy \eqref{e:p1}. Thus, recalling that $A=\{\omega_1,...,\omega_k\}$, we obtain that 
+\bel{}{1 & =\mathbb{P}(\omega)+...+\mathbb{P}(\omega_k)+\mathbb{P}(\omega_{k+1})+...+\mathbb{P}(\omega_n)\\ &=c\mathbb{P}(\omega_1)+...+c\mathbb{P}(\omega_k)=c(\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_k))=c\mathbb{P}(A).
+}
+Thus $c=1/\mathbb{P}(A)$ and \bel{e:condi}{
+\mathbb{P}(\omega)=\begin{cases}
+\frac{\mathbb{P}(\omega)}{\mathbb{P}(A)} & \textrm{ if }\omega\in A\\
+0 & \textrm{ if } \omega \notin A,
+\end{cases}} 
+\textbf{Exercise} Show that, defining 
+$\mathbb{P}(\omega|A)$ as in \eqref{e:condi}, then $\mathbb{P}(B|A)=\mathbb{P}(A\cap B)/\mathbb{P}(A)$.\\
+\textbf{Solution:}
+Hint: Do this exercise with concrete examples and not in general. 
+
+\subsection{Definition} 
+Consider an experiment with sample space $\Omega$. Assume we have assigned to it a probability $\mathbb{P}$.
+\begin{definition}
+\label{conditional}
+Assume $\mathbb{P}(B)>0$. The conditional probability of the event $A$ given that the event $B$ has ocurred is 
+$\mathbb{P}(A\vert B):= \frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}. $
+\end{definition}
+The conditional probability $\mathbb{P}(\cdot\vert A)$ is the probability defined on the events of the experiment given that you have observed $A$. Which one of the elementary events in $A$ has been responsable for the event $A$? It is a natural definition: you want to assign $\mathbb{P}(\omega|B)=0$, if $\omega\notin A$, but you want to keep the same proportions that $\mathbb{P}$ gives to you for the elements of $A$. That is, you want your new probability to be $0$ in $A^c$ and a $c\mathbb{P}(\omega)$ in $A$, where $c$ is a normalization factor. Condition \eqref{e:p1} then tells you that $c=1/\mathbb{P}(A)$. 
+\begin{definition}
+Two events are said to be independent if $\mathbb{P}(A|B)=\mathbb{P}(A)$. This is equivalent to say that $\mathbb{P}(A\cap B)=\mathbb{P}(A)\mathbb{P}(B)$.
+\end{definition}
+\textbf{Example 1:} You draw from a  bowl that contains three marbles, one red, one blu, and one green. You replace the marble and you draw another. $\Omega=\{(r,r),..(g,g)\}$, and we use the uniform probability on $\Omega$.
+In the next section this will be done in general, and we will see that the uniform probability in $\Omega$ arises by imposing that the two draws are independent. \\
+\textbf{Example 2:}
+We draw two marbles from a bowl, without replacing the ones that we have drawn. We can keep the same sample space $\Omega$  as before and consider $\mathbb{P}(r,r)=\mathbb{P}(b,b)=\mathbb{P}(g,g)=0$. In the other outcomes we place the uniform probability:$\mathbb{P}(r,g)=---=\mathbb{P}(b,g)=1/6 $. Are the events "The first marble is r" and "the second marble is g" independent? \\
+%\textbf{Exercise 1}
+%In my town, it's rainy one third of the days. When it is raining, I will arrive late to work with probability 1/4. When it is not, with probability 1/8. What is the probability that I am late?\\
+\textbf{Exercise 1}
+If you throw two dice, what is the probability conditioned on "The sum of the two dice is 7"? (We have said that the $\mathbb{P}(\cdot|A)$ is a new probability on the elementary events of $A$. The exercises asks to find it)\\
+\textbf{Exercise 2} You toss a fair coin 4 time. Assume that every outcome is equally probable. Show that the events "The fourth toss gave heads" and the event "The first three tosses gave head" are independent.  \\
+\textbf{Exercise 3} You throw a fair coin 4 times. Show that, knowing that only one head has been observed, the head is equally probable to have appeared in the 1st,2nd,3rd and 4th position.  
+\textbf{Exercise 4} 
+Show that $\mathbb{P}(\cdot | A)$ is a probability on the new sample space $A$. Show that if $\mathbb{P}$ is the uniform probability in  $\Omega$, then $\mathbb{P}(\cdot |A)$ is the uniform probability in $A$. That is, show that  $\mathbb{P}(\omega| A)=1/\# \textrm{elements of A}$, for every $\omega\in A$.\\
+This last exercise is easy to understand in the following way: 
+The probability that a randomly (with uniform probability) chosen person is 175 cm high is the number of people that are 1,75 cm high divided by the number of people in earth. If we know that the person we have chosen is from Sardinia, then the probability that the person we have chosen is 175 cm high is the number of people from Sardinia that are 175 cm high divided by the total population of Sardinia.
 
 
-\section{Conditional Probability }
-
-
-\subsection{Total probability formula}
-
+\subsection{Total probability Formula}
+We start with a single case of the total probability formula
+\begin{proposition}
+Let $B\subset \Omega$ be an event. Then 
+\bel{e:totaleasy}{\mathbb{P}(A)=\mathbb{P}(A|B)\mathbb{P}(B)+\mathbb{P}(A|B^c)\mathbb{P}(B^c)}
+\end{proposition}
+\begin{proof}
+\bel{}{\mathbb{P}(A)=\mathbb{P}(A\cap\Omega)=\mathbb{P}(A\cap(B\cup B^c))=\mathbb{P}((A\cap B)\cup (A\cap B^c)).}
+Since $A\cap B$ and $A\cap B^c$ are disjoint, we can use the \eqref{e:add} and the above expression becomes
+\bel{}{\mathbb{P}(A)& =\mathbb{P}(A\cap B)+\mathbb{P}(A\cap B^c)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}+\frac{\mathbb{P}(A\cap B^c)}{\mathbb{P}(B^c)}\\ &=\mathbb{P}(A|B)\mathbb{P}(B)+\mathbb{P}(A|B^c)\mathbb{P}(B^c),}
+which is what we wanted to prove.
+\end{proof}
+The above formula has an easy interpretation. To look at the probability of $A$, you can look at the probability that $B$ or $B^c$ happen, and then, conditioned to those events you can llok if $A$ happened. Let's  see an example
+\textbf{Example:}
+We toss a coin. If the coin gives heads we draw a ball from a bowl that contains a blue ball, a red ball and a white ball. If the con gives tails, we draw a ball from a bowl that contains a blue ball or a red ball. What is the probability of drawing a red ball?\\
+Let's call B="The coin gave heads". We know that $\mathbb{P}(B)=\mathbb{P}(B^c)=1/2$. We also know that the event r=" We draw a red ball" has the following probabilities conditioned on $B$:
+\bel{}{\mathbb{P}(r|B)=1/3,\,\,\mathbb{P}(r|B^c)=1/2.}
+We can apply formula \eqref{e:totaleasy} to obtain 
+\bel{}{\mathbb{P}(r)=\mathbb{P}(r|B)\mathbb{P}(B)+\mathbb{P}(r|B^c)\mathbb{P}(B^c)=1/2\cdot 1/3+1/2\cdot 1/2=5/12.}
+We now give the real total probability formula. The proof is almost the same, but we need to introduce the concept of partition of the sample space $\Omega$:
+\begin{definition}
+The events $B_1$,...,$B_n$ are said to be mutually disjoint if $B_i\cap B_j=\emptyset$ whenever $i\neq j$.
+A partition is a set $\{B_1,...,B_n\}$ of mutually disjoint events $B_i$, such that $\Omega=\bigcup_{i=1}^n B_i$.  
+\end{definition}
+Examples of partitions are 
+\begin{itemize}
+    \item In 4 coin tosses, a partition of $\Omega=\{0000,0001,....,1111\}$ in two events is, for example, $\{B_1,B_2\}$, where $B_1$="The first toss gave tail" and $B_2=(B_1)^c$="The first toss was head".\\
+    \item In the roll of a die, an example of partition of $\Omega=\{1,2,3,4,5,6\}$ is 
+    $\{B_1,B_2\}$, where $B_1=\{2,4,6\}=$"The result is an even number", and $B_1=\{1,3,5\}=$"The result is an odd number".\\
+    \item If we roll two dice, a partition is $\{B_2,...,B_{12}\}$, where $B_i$ is the event "The sum of the dice is i".  
+\end{itemize}
+Note that if a partition consists of two events $B_1$ and $B_2$, then $B_2=(B_1)^c$. 
+\begin{proposition}[Total probability formula]
+Let $\{B_1,....,B_n\}$ be a partition of $\Omega$. Then 
+\bel{}{\mathbb{P}(A)=\mathbb{P}(A|B_1)\mathbb{P}(B_1)+...+\mathbb{P}(A|B_n)\mathbb{P}(B_n).}
+\end{proposition}
+The proof is basically the same as the proof of the previous propositon.
 
 \subsection{Some paradoxes.}
 With paradoxes we actually mean counterintuitive facts 
@@ -745,11 +875,7 @@ You can verify that in both cases Strategy 2 is the best strategy. \\
 %\bel{}{\mathbb{P}(F)=1/9+1/9+1/9=1/3.}
 %\bel{}{}
 
-\begin{exercise}[Exercise 1] 3 prisoners, (A,B,C) are condemned to death. They decide to save one of them, but the name will be given only some minutes before the executions. A asks to a guard if he will be saved, but gets no answer. A asks then which one between B and C will be executed, and the guard says C. At this point A says."Now only one between me and B will be executed; I have 50\% of chances to survive ". Is it correct his reasoning?\\
-\end{exercise}
-\begin{solution}
-
-\end{solution}
+\textbf{Exercise 1}: 3 prisoners, (A,B,C) are condemned to death. They decide to save one of them, but the name will be given only some minutes before the executions. A asks to a guard if he will be saved, but gets no answer. A asks then which one between B and C will be executed, and the guard says C. At this point A says."Now only one between me and B will be executed; I have 50\% of chances to survive ". Is it correct his reasoning?\\
 
 \textbf{Exercise 2} There are three cards one of them has both faces black, one with both red faces, and the last one with one black face and the other face red. You draw a card and observe a red face. What is the probability that the other face is red? 
 
@@ -780,7 +906,6 @@ Thus it is not $\mathbb{P}(B|A)$ that matters, but only its relative value $\mat
 Plugging in this value, one obtains that
 \bel{}{p\geq 10/11}
 At the end, the man has been judged guilty. 
-
 
 
 
