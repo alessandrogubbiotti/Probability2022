@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.27)  7 NOV 2022 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.27)  7 NOV 2022 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -681,40 +681,45 @@ e 272.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 287.
+e 286.
 
 
-LaTeX Warning: Citation 'Ross' on page 6 undefined on input line 288.
+Overfull \hbox (28.12325pt too wide) in paragraph at lines 286--287
+[]\OT1/cmr/m/n/12 The el-e-men-tary events are HHHH, HHHT,HHTH,....,TTTT.
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--290
+LaTeX Warning: Citation 'Ross' on page 6 undefined on input line 293.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 291.
+e 296.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-
- []
-
-
-Package Exercise Warning: An answer has no reference and no number on input lin
-e 297.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 303.
+e 302.
 
-[6] [7]
-Overfull \hbox (122.00961pt too wide) in paragraph at lines 341--342
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 308.
+
+[6] [7] [8]
+Overfull \hbox (122.00961pt too wide) in paragraph at lines 346--347
 []\OT1/cmr/m/it/12 The sam-ple space is $\OT1/cmr/m/n/12 
  = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)\OM
 L/cmm/m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm
@@ -724,8 +729,8 @@ L/cmm/m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm
 2 g \OT1/cmr/m/n/12 =
  []
 
-[8]
-Overfull \hbox (0.34341pt too wide) in paragraph at lines 349--351
+[9]
+Overfull \hbox (0.34341pt too wide) in paragraph at lines 354--356
 \OT1/cmr/m/it/12 For three tosses, $\OT1/cmr/m/n/12 
 [] = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 000\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 00
 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 010\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 011\O
@@ -736,18 +741,18 @@ y/m/n/12 g \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]x[]x[] ;  x[
  []
 
 
-Overfull \hbox (23.68365pt too wide) in paragraph at lines 354--355
+Overfull \hbox (23.68365pt too wide) in paragraph at lines 359--360
 []\OT1/cmr/m/it/12 Suppose
  []
 
 
-Overfull \hbox (6.242pt too wide) in paragraph at lines 359--361
+Overfull \hbox (6.242pt too wide) in paragraph at lines 364--366
 []\OT1/cmr/m/it/12 A non-trivial gen-er-al-iza-tion of $\OML/cmm/m/it/12 n$ \OT
 1/cmr/m/it/12 coin
  []
 
-[9]
-Overfull \hbox (6.98056pt too wide) in paragraph at lines 394--395
+[10]
+Overfull \hbox (6.98056pt too wide) in paragraph at lines 399--400
 \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 000\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 001\OML
 /cmm/m/it/12 ; \OT1/cmr/m/n/12 010\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 100\OMS/cm
 sy/m/n/12 g \ f\OT1/cmr/m/n/12 001\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 010\OML/cm
@@ -759,36 +764,34 @@ T1/cmr/m/n/12 100\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . Note
  []
 
 
-LaTeX Warning: Citation 'Feller' on page 10 undefined on input line 402.
+LaTeX Warning: Citation 'Feller' on page 11 undefined on input line 407.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 414.
+e 419.
 
+[11]
 
-LaTeX Warning: Reference `ex:set1' on page 10 undefined on input line 420.
-
-
-LaTeX Warning: Citation 'Ross' on page 10 undefined on input line 432.
+LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 437.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 434.
+e 439.
 
 
-Overfull \hbox (8.71788pt too wide) detected at line 435
+Overfull \hbox (8.71788pt too wide) detected at line 440
 []
  []
 
 
-LaTeX Warning: Citation 'Ross' on page 10 undefined on input line 443.
+LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 448.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 447.
+e 452.
 
 
-Overfull \hbox (68.85707pt too wide) detected at line 455
+Overfull \hbox (68.85707pt too wide) detected at line 460
 \OML/cmm/m/it/12 E \OMS/cmsy/m/n/12 [ \OML/cmm/m/it/12 F \OT1/cmr/m/n/12 = \OMS
 /cmsy/m/n/12 f\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)\OML/cmm/m
 /it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm/m/it/1
@@ -806,19 +809,19 @@ m/n/12 5)\OMS/cmsy/m/n/12 g
  []
 
 
-LaTeX Warning: Citation 'Ross' on page 10 undefined on input line 466.
+LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 471.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 471.
+e 476.
 
-[10] [11]
-Overfull \hbox (4.75192pt too wide) in paragraph at lines 557--558
+[12] [13] [14]
+Overfull \hbox (4.75192pt too wide) in paragraph at lines 562--563
 []\OT1/cmr/m/it/12 Assume that we throw a bal-anced dice. Then
  []
 
-[12]
-Overfull \hbox (22.87436pt too wide) in paragraph at lines 588--590
+[15] [16]
+Overfull \hbox (22.87436pt too wide) in paragraph at lines 593--595
 []\OT1/cmr/m/n/12 Let's con-sider the event $\OML/cmm/m/it/12 E \OT1/cmr/m/n/12
  = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 ![]; :::; ![]\OMS/cmsy/m/n/12 g$ \OT1/cmr
 /m/n/12 (or more gen-er-ally $\OML/cmm/m/it/12 E \OT1/cmr/m/n/12 = \OMS/cmsy/m/
@@ -828,21 +831,18 @@ n/12 f\OML/cmm/m/it/12 ![]; :::; ![]\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ).
 ! Undefined control sequence.
 <argument> \split@tag \begin {split}  \mathhbb 
                                                {P}(E)=\frac {\textrm {number...
-l.590 ...textrm{number of elements of $\Omega$}}.}
+l.595 ...textrm{number of elements of $\Omega$}}.}
                                                   
 ? 
 ! Undefined control sequence.
 <argument> \split@tag \begin {split}  \mathhbb 
                                                {P}(E)=\frac {\textrm {number...
-l.590 ...textrm{number of elements of $\Omega$}}.}
+l.595 ...textrm{number of elements of $\Omega$}}.}
                                                   
 ? 
-[13] [14] (./lecture1.aux)
+[17] (./lecture1.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -854,10 +854,10 @@ Package logreq Info: Writing requests to 'lecture1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11727 strings out of 479304
- 209189 string characters out of 5869779
- 917841 words of memory out of 5000000
- 28794 multiletter control sequences out of 15000+600000
+ 11729 strings out of 479304
+ 209199 string characters out of 5869779
+ 922863 words of memory out of 5000000
+ 28796 multiletter control sequences out of 15000+600000
  412091 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,21n,89p,911b,1239s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -875,10 +875,10 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfrm1200.pfb>
-Output written on lecture1.pdf (14 pages, 178074 bytes).
+Output written on lecture1.pdf (17 pages, 187988 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
