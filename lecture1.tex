@@ -804,12 +804,13 @@ and we have proved is that the number of elements in $\Omega$ is $|\Omega|=64\ti
 
 
 \section{Conditional probability}
-The probability of an event depends on the state of information that an individual has on a  system. We can ask ourselves how does the probability change when we know that an event $A$ has happened. For example, the probability of the event "A.C. Milan wins the Champions League", will decrease if the event "Ibrahimovich gets injured" happens. 
-Let $\Omega=\{\omega_1,...,\omega_n\}$ be the sample space and assume that the event $B=\{\omega_1,...,\omega_k\}$ has been observed. We denote the new probability \emph{conditioned to B} by the symbol $\mathbb{P}(\cdot| A) $, that is, we denote the probability of $A$ conditioned to $B$ by $\mathbb{P}(A|B)$. Of course, the new probability has to satisfy  $\mathbb{P}(\omega|B)=0$ if $\omega\notin B$. If $\omega\in B$, what should the new value $\mathbb{P}(\omega|B)$ be? Since the new informtion tells us only that $B$ has happened, but it does not give us information about the single $\omega$s in $B$, the proportions given by $\mathbb{P}$ in $B$ should be manteined by $\mathbb{P}(\cdot|B)$ . We therefore set $\mathbb{P}(\omega|B)=c\mathbb{P}(\omega)$ if $\omega\in A$, for some constant $c$. How do we determine $c$? By requiring \eqref{e:fund} to be satisfied by $\mathb{P}(\cdot|B)$. Using that $B=\{\omega_1,...,\omega_k\}$, we obtain that 
+
+The probability of an event depends on the state of information that an individual has on a  system. We can ask ourselves how does the probability change when we know that an event $A$ has happened. For example, the probability of the event "A.C. Milan wins the Champions League", decreases if the event "Ibrahimovich gets injured" happens. 
+Let $\Omega=\{\omega_1,...,\omega_n\}$ be the sample space and assume that the event $B=\{\omega_1,...,\omega_k\}$ has been observed. We denote the new probability \emph{conditioned to B} by the symbol $\mathbb{P}(\cdot| A) $, that is, we denote the probability of $A$ conditioned to $B$ by $\mathbb{P}(A|B)$. Of course, the new probability has to satisfy  $\mathbb{P}(\omega|B)=0$ if $\omega\notin B$. If $\omega\in B$, what should the new value $\mathbb{P}(\omega|B)$ be? Since the new informtion tells us only that $B$ has happened, but it does not give us information about the single $\omega$s in $B$, the proportions given by $\mathbb{P}$ in $B$ should be manteined by $\mathbb{P}(\cdot|B)$. We therefore set $\mathbb{P}(\omega|B)=c\mathbb{P}(\omega)$ if $\omega\in B$, for some constant $c$. $c$ can be determined by requiring $\mathb{P}(\cdot|B)$  to datisfy \eqref{e:fun}. If $B=\{\omega_1,...,\omega_k\}$, we obtain that 
 \bel{}{1 & =\mathbb{P}(\omega|B)+...+\mathbb{P}(\omega_k|B)+\mathbb{P}(\omega_{k+1}|B)+...+\mathbb{P}(\omega_n|B)
 \\ &=c\mathbb{P}(\omega_1)+...+c\mathbb{P}(\omega_k)=c(\mathbb{P}(\omega_1)+...+\mathbb{P}(\omega_k))=c\mathbb{P}(B).
 }
-Thus $c=1/\mathbb{P}(B)$ and
+Therefore $c=1/\mathbb{P}(B)$ and
 
 \bel{e:condi}{
 \mathbb{P}(\omega|B)=\begin{cases}
@@ -817,7 +818,7 @@ Thus $c=1/\mathbb{P}(B)$ and
 0 & \textrm{ if } \omega \notin B,
 \end{cases}} 
 
-Now consider an event $A=\{\omega_1,...,\omega_s,\omega_{k+1},...,\omega_{k+m}\}$, where $s \leq k$. Then \eqref{d:prob}  gives \bel{}{\mathbb{P}(A|B)=\frac{1}{\mathbb{P}(B)}(\mathbb{P}(\omega_1)+....+\mathbb{P}(\omega_s) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}}
+Now consider an event $A=\{\omega_1,...,\omega_s,\omega_{k+1},...,\omega_{k+m}\}$, where $s \leq k$. \eqref{d:prob}  gives \bel{}{\mathbb{P}(A|B)=\frac{1}{\mathbb{P}(B)}(\mathbb{P}(\omega_1)+....+\mathbb{P}(\omega_s) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}}
 
 
 
@@ -828,10 +829,31 @@ Now consider an event $A=\{\omega_1,...,\omega_s,\omega_{k+1},...,\omega_{k+m}\}
 	for each $A\subset\Omega$.
 \end{definition}
 
-The conditional probability $\mathbb{P}(\cdot\vert A)$ is the probability defined on the events of the experiment given that you have observed $A$. Which one of the elementary events in $A$ has been responsable for the event $A$? It is a natural definition: you want to assign $\mathbb{P}(\omega|B)=0$, if $\omega\notin A$, but you want to keep the same proportions that $\mathbb{P}$ gives to you for the elements of $A$. That is, you want your new probability to be $0$ in $A^c$ and a $c\mathbb{P}(\omega)$ in $A$, where $c$ is a normalization factor. Condition \eqref{e:p1} then tells you that $c=1/\mathbb{P}(A)$. 
 \begin{ExerciseList}
 	\Exercise If you throw two dice (we regard each outcome as equally probable and the reason will be investigated in \ref{ss:ind}), what is the probability conditioned on "The sum of the two dice is 7"?.
 	\Answer The sample space is $\Omega=\{(i,j)\,,\,i,j\in\{1,2,3,4,5,6\}\}$, and the event corresponds to $A=\{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}$. We see  that $\mathbb{P}(\omega|A)=\frac{1/36}{6/36}=1/6$ if $i+j=7$, $0 $ otherwise. That is,all the outcomes in $A$ are equally probable. 
+	
+
+
+
+
+	\Exercise You toss a fair coin 4 times. Show that, knowing that only one head has been observed, the head is equally probable to have appeared in the 1st,2nd,3rd and 4th position.  
+
+
+	\Exercise
+Show that $\mathbb{P}(\cdot | A)$ is a probability on the new sample space $A$. Show that if $\mathbb{P}$ is the uniform probability in  $\Omega$, then $\mathbb{P}(\cdot |A)$ is the uniform probability in $A$. That is, show that  $\mathbb{P}(\omega| A)=1/\# \textrm{elements of A}$, for every $\omega\in A$.
+
+
+	\Exercise (\cite{Feller}, Chapter V.8) Three dice are rolled. If no two show the same face, what is the probability that one is an ace?
+
+	\Answer The sample space is $\Omega=\{(i,j,k)\,,i,j,k\in \{1,....6\}\}$, and the event "No two dice show the same face is $A=\{\(i,j,k)\in \Omega\,,\, i\neq j, j\neq k, i\neq k\}$. The event B="The sum of the two dice is 7" is such that  $A \cap B$ is the disjoint union of the events"A and the 1 is in 1st position", "A and the 1 is in 2nd", "A and the 1 is in 3rd poosition". This union is disjoint since if $A$ happens, a 1 in the 1st position implies that there is no 1 neither in the 2nd nor in the 3rd. In formulas $A\cap B =( A\cap B_1) \cup (A \cap B_2) \cup (A \cap B_3)$, where $B_1 = \{(1,j,k)\in \Omega\}$, $B_2 =\{(i,1,k)\in \Omega\}$ and $B_3 = \{\(i,j,1)\in \Omega\}$.  Thus 
+
+\bel{}{\mathbb{P}(B|A) & = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)} = \frac{\mathbb{P}(A \cap B_1)}{\mathbb{P}(A)} \\
+	 & + \frac{\mathbb{P}(A \cap B_2)}{\mathbb{P}(A)} + \frac{\mathbb{P}(A \cap B_3)}{\mathbb{P}(A)}= 3\frac{\mathbb{P}( A \cap B_1)}{\mathbb{P}(A)}. }
+	The event $A \cap B_1= \{(1,j,k)\, ,\, j\neq k\}$  is composed by $6\times 5 =30$ elements.  The event $A$ is composed by $ 6 \times 5 \times 4 $ elements.  Thus  
+	\bel{}{\mathbb{P}(B|A)=\frac{6\times 5/216}{6\times 5 \times 4/216 }=\frac{6\times 5 }{6\times 5 \times 4}=1/4}
+
+
 	
 \end{ExerciseList}
 
@@ -841,52 +863,41 @@ The conditional probability $\mathbb{P}(\cdot\vert A)$ is the probability define
 Suppose that the Italian population  is composed by $N$ individuals, that $N_B$  of them are taller than 175 cm and that $N_A$ of them come from Sardinia. Let the events that a person chosen at random (i.e. with uniform probability) is taller than 175 cm and a comes from Sardinia be A and B, respectively.
 Then $\mathbb{P}(A) = N_A/N$ and $\mathbb{P}(B|A)=N_{AB}/N_{A}$, where $N_{AB}$ is the number of people coming from Sardinia being taller than 175 cm. The interpretation of the probability measure $\mathbb{P}(\cdot|A)$ is clear: we are extracting a random person from the subpopulation $N_A$ (which is a population on its own right), the one composed by people from Sardinia . 
 
-\endi{example}
+\end{example}
 
 
 		\subsection{Independence of events}
 		
 		Intuitively, two events $A$,$B\subset \Omega$ are independent if the realization of one of them does not influence the probability of the other: $\mathbb{P}(B|A)=\mathbb{P}(B)$. This can be rewritten in a more symmetric form as
 		\begin{definition}
-			Let $A, B\subset\Omega$ be two events. $A$ and $B$ are said to be independent if $\mathbb{P}(A \cap B) \mathbb {P}(A) \mathbb{P}(B)$. 
+			Let $A, B\subset\Omega$ be two events. $A$ and $B$ are said to be independent if $\mathbb{P}(A \cap B) = \mathbb {P}(A) \mathbb{P}(B)$. 
 		\end{definition}
+
+
+ 
+For 3 events $A$,$B$ and $C$ to be independent mean that they are pairwise independent $\mathbb{P}(A \cap B)=\mathbb{P}(A)\mathbb{P}(B)$, $\mathbb{P}(A \cap C)=\mathbb{P}(A)\mathbb{P}(C)$,  $\mathbb{P}(B \cap C)=\mathbb{P}(B)\mathbb{P}(C)$, and that they all satisfy $\mathbb{P}(A\cap B \cap C)=\mathbb{P}(A)\mathbb{P} (B)\mathbb{P}(C)$. An example three events pairwise independent but not independent is given in one of the following  exercises. 
 
 
 \begin{ExerciseList}
 
-	\Exercise (\cite{Feller}, Chapter V.8) Three dice are rolled. If no two show the same face, what is the probability that one is an ace?
 
-	\Answer The sample space is $\Omega=\{(i,j,k)\,,i,j,k\in \{1,....6\}\}$, and the event "No two dice show the same face is $A=\{\(i,j,k)\in \Omega\,,\, i\neq j, j\neq k, i\neq k\}$. The event B="The sum of the two dice is 7" is such that  $A \cap B$ is the disjoint union of the events"A and the 1 is in 1st position", "A and the 1 is in 2nd", "A and the 1 is in 3rd poosition". This union is disjoint since if $A$ happens, a 1 in the 1st position implies that there is no 1 neither in the 2nd nor in the 3rd. In formulas $A\cap B =( A\cap B_1) \cup (A \cap B_2) \cup (A \cap B_3)$, where $B_1 = \{(1,j,k)\in \Omega\}$, $B_2 =\{(i,1,k)\in \Omega\}$ and $B_3 = \{\(i,j,1)\in \Omega\}$.  Thus 
-	\bel{}{\mathbb{P}(B|A) & = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)} = \frac{\mathbb{P}(A \cap B_1)}{\mathbb{P}(A)} \\
-	 & + \frac{\mathbb{P}(A \cap B_2)}{\mathbb{P}(A)} + \frac{\mathbb{P}(A \cap B_3)}{\mathbb{P}(A)}= 3\frac{\mathbb{P}( A \cap B_1)}{\mathbb{P}(A)}. }
-	The event $A \cap B_1= \{(1,j,k)\, ,\, j\neq k\}$  is composed by $6\times 5 =30$ elements.  The event $A$ is composed by $ 6 \times 5 \times 4 $ elements.  Thus  
-	\bel{}{\mathbb{P}(B|A)=\frac{6\times 5/216}{6\times 5 \times 4/216 }=\frac{6\times 5 }{6\times 5 \times 4}=1/4}
+	\Exercise You toss a fair coin 4 time.Assume that every outcome is equally probable ( we will rigorously see why ). Show that the events "The fourth toss gave heads" and the event "The first three tosses gave head" are independent.  
 
-
+	\Exercise You draw from a  bowl that contains three marbles, one red, one blu, and one green. You replace the marble and you draw another. $\Omega=\{(r,r),..(g,g)\}$, and we use the uniform probability on $\Omega$ (we will see rigourously why in \ref{ss:ind}). Are the events the firs marble is red and the second is green independent?
 	
+	\Exercise We draw two marbles from a bowl, without replacing the ones that we have drawn. We can keep the same sample space $\Omega$  as before and consider $\mathbb{P}(r,r)=\mathbb{P}(b,b)=\mathbb{P}(g,g)=0$. In the other outcomes we place the uniform probability:$\mathbb{P}(r,g)=---=\mathbb{P}(b,g)=1/6 $ (this is due to independence and will be explained in \ref{ss:ind}). Are the events "The first marble is r" and "the second marble is g" independent? 
 
-	\Exercise You toss a fair coin 4 time. Assume that every outcome is equally probable. Show that the events "The fourth toss gave heads" and the event "The first three tosses gave head" are independent.  
-
-	\Exercise You throw a fair coin 4 times. Show that, knowing that only one head has been observed, the head is equally probable to have appeared in the 1st,2nd,3rd and 4th position.  
-
-
-	\Exercise
-Show that $\mathbb{P}(\cdot | A)$ is a probability on the new sample space $A$. Show that if $\mathbb{P}$ is the uniform probability in  $\Omega$, then $\mathbb{P}(\cdot |A)$ is the uniform probability in $A$. That is, show that  $\mathbb{P}(\omega| A)=1/\# \textrm{elements of A}$, for every $\omega\in A$.
+	\Exercise $\Omega = \{1,2,3,4\}$ and $\mathbb{P}(i) = 1/4 $ for every $i\in \Omega$. Show that $A=\{1,2\}$ $B=\{1,3\}$ and $C=\{2,3\}$ are pairwise independent but not independent. 
 
 \end{ExerciseList}
  
 
-Two events are said to be independent if $\mathbb{P}(A|B)=\mathbb{P}(A)$. This is equivalent to say that $\mathbb{P}(A\cap B)=\mathbb{P}(A)\mathbb{P}(B)$.
-\end{definition}
-\textbf{Example 1:} You draw from a  bowl that contains three marbles, one red, one blu, and one green. You replace the marble and you draw another. $\Omega=\{(r,r),..(g,g)\}$, and we use the uniform probability on $\Omega$.
-In the next section this will be done in general, and we will see that the uniform probability in $\Omega$ arises by imposing that the two draws are independent. \\
-\textbf{Example 2:}
-We draw two marbles from a bowl, without replacing the ones that we have drawn. We can keep the same sample space $\Omega$  as before and consider $\mathbb{P}(r,r)=\mathbb{P}(b,b)=\mathbb{P}(g,g)=0$. In the other outcomes we place the uniform probability:$\mathbb{P}(r,g)=---=\mathbb{P}(b,g)=1/6 $. Are the events "The first marble is r" and "the second marble is g" independent? \\
-
 
 
 \subsection{Total probability Formula}
-We start with a single case of the total probability formula
+
+Usually when trying to estimate the probability of an event, such us, "Tomorrow I will go to the cinema", we do reasonings of the kind i" if it rains I will go with probability q, if it  is good weather I will with probability p". The rigourous mathematical analog is given by the total probability formula. 
+We start with a particular case 
 \begin{proposition}
 Let $B\subset \Omega$ be an event. Then 
 \bel{e:totaleasy}{\mathbb{P}(A)=\mathbb{P}(A|B)\mathbb{P}(B)+\mathbb{P}(A|B^c)\mathbb{P}(B^c)}
@@ -897,37 +908,44 @@ Since $A\cap B$ and $A\cap B^c$ are disjoint, we can use the \eqref{e:add} and t
 \bel{}{\mathbb{P}(A)& =\mathbb{P}(A\cap B)+\mathbb{P}(A\cap B^c)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}+\frac{\mathbb{P}(A\cap B^c)}{\mathbb{P}(B^c)}\\ &=\mathbb{P}(A|B)\mathbb{P}(B)+\mathbb{P}(A|B^c)\mathbb{P}(B^c),}
 which is what we wanted to prove.
 \end{proof}
-The above formula has an easy interpretation. To look at the probability of $A$, you can look at the probability that $B$ or $B^c$ happen, and then, conditioned to those events you can llok if $A$ happened. Let's  see an example
-\textbf{Example:}
+The above formula has an easy interpretation. We are summing the proportion of $A$ in $B$, but we have tonormilize by the total mass of $B$, which is $\mathbb{P}(B)$, and the proportion of $A$ in $B^c$, weighted $\mathbb{P}(B^c)$. 
+Let's see an example
+\begin{example}
 We toss a coin. If the coin gives heads we draw a ball from a bowl that contains a blue ball, a red ball and a white ball. If the con gives tails, we draw a ball from a bowl that contains a blue ball or a red ball. What is the probability of drawing a red ball?\\
 Let's call B="The coin gave heads". We know that $\mathbb{P}(B)=\mathbb{P}(B^c)=1/2$. We also know that the event r=" We draw a red ball" has the following probabilities conditioned on $B$:
 \bel{}{\mathbb{P}(r|B)=1/3,\,\,\mathbb{P}(r|B^c)=1/2.}
 We can apply formula \eqref{e:totaleasy} to obtain 
 \bel{}{\mathbb{P}(r)=\mathbb{P}(r|B)\mathbb{P}(B)+\mathbb{P}(r|B^c)\mathbb{P}(B^c)=1/2\cdot 1/3+1/2\cdot 1/2=5/12.}
-We now give the real total probability formula. The proof is almost the same, but we need to introduce the concept of partition of the sample space $\Omega$:
+
+\end{example} 
+We now give the total probability formula in full generality. The proof is almost the same, but we need to introduce the concept of partition of the sample space $\Omega$:
 \begin{definition}
 The events $B_1$,...,$B_n$ are said to be mutually disjoint if $B_i\cap B_j=\emptyset$ whenever $i\neq j$.
 A partition is a set $\{B_1,...,B_n\}$ of mutually disjoint events $B_i$, such that $\Omega=\bigcup_{i=1}^n B_i$.  
 \end{definition}
+
 Examples of partitions are 
 \begin{itemize}
-    \item In 4 coin tosses, a partition of $\Omega=\{0000,0001,....,1111\}$ in two events is, for example, $\{B_1,B_2\}$, where $B_1$="The first toss gave tail" and $B_2=(B_1)^c$="The first toss was head".\\
+    \item In 4 coin tosses, a partition of $\Omega=\{0000,0001,....,1111\}$ in two events is, for example, $\{B_1,B_2\}$, where $B_1$="The first toss gave tail" and $B_2=(B_1)^c$="The first toss was head".
     \item In the roll of a die, an example of partition of $\Omega=\{1,2,3,4,5,6\}$ is 
-    $\{B_1,B_2\}$, where $B_1=\{2,4,6\}=$"The result is an even number", and $B_1=\{1,3,5\}=$"The result is an odd number".\\
-    \item If we roll two dice, a partition is $\{B_2,...,B_{12}\}$, where $B_i$ is the event "The sum of the dice is i".  
+    $\{B_1,B_2\}$, where $B_1=\{2,4,6\}=$"The result is an even number", and $B_1=\{1,3,5\}=$"The result is an odd number".
+    \item If we roll two dice, a partition is $\{B_2,...,B_{12}\}$, where $B_i$ is the event "The sum of the dice is i".
+	    	\item We observe some coin tosses but we don't know how many of them. $\Omega = \cup_n \Omega_n$, where $\Omega_n$=" There have been $n$ tosses "$=\{x_1...x_n\,,x_i\in\{0,1\}\}$. The $\Omega_n$ form a partition. 
 \end{itemize}
+
+
 Note that if a partition consists of two events $B_1$ and $B_2$, then $B_2=(B_1)^c$. 
 \begin{proposition}[Total probability formula]
 Let $\{B_1,....,B_n\}$ be a partition of $\Omega$. Then 
 \bel{}{\mathbb{P}(A)=\mathbb{P}(A|B_1)\mathbb{P}(B_1)+...+\mathbb{P}(A|B_n)\mathbb{P}(B_n).}
 \end{proposition}
-The proof is basically the same as the proof of the previous propositon.
+We omit the prove, which is similat to the previous.
 
 \begin{ExerciseList}
 
 	\Exercise 
 
-	\Exercise[ Given at Harvard med students and failed by the majority] At the moment 1/1000 has covid. The test has a 5\% of possibility of giving a false positive: You don't have covid but the test is positive (and if you don't have covid, it always testes negative). 
+	\Exercise At the moment 1/1000 has covid. The test has a 5\% of possibility of giving a false positive: You don't have covid but the test is positive (and if you don't have covid, it always testes negative). 
 	\Question You make the test and you are tested positive. What is the probability that you have covid
 	\Question You have some sympthoms and you think that the probability that you have covid is 50\%. You get tested and 
 	\Answer 
@@ -948,7 +966,7 @@ The proof is basically the same as the proof of the previous propositon.
 \end{ExerciseList}
 
 \subsection{Some paradoxes.}
-With paradoxes we actually mean counterintuitive facts 
+With paradoxes we actually mean facts that are counterintuitive at a first glance.\\ 
 \textbf{The Mounty Hall problem}
 Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice? \\
 One is tempted to say that it makes no difference, but actually this is incorrect, and it is convenient to change the door. This fact is explained once we note that the without changing the door, we win with probability 1/3. Changing the door, we win if and only if we have chosen at the beginning the wrong door, and this happens with probability $2/3$. We are going to see this in a more mathematical way. \\
