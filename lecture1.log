@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.27)  7 NOV 2022 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.27)  11 NOV 2022 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -93,12 +93,24 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks26
+)
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
@@ -106,12 +118,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count198
 \calc@Adimen=\dimen148
 \calc@Bdimen=\dimen149
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count199
-\calc@Cskip=\skip54
+\calc@Cskip=\skip57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -122,7 +134,7 @@ LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \g_MT_multlinerow_int=\count266
 \l_MT_multwidth_dim=\dimen150
-\origjot=\skip55
+\origjot=\skip58
 \l_MT_shortvdotswithinadjustabove_dim=\dimen151
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen152
 \l_MT_above_intertext_sep=\dimen153
@@ -221,14 +233,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@sectionciteorder@0=\count308
 \blx@entrysetcounter=\count309
 \blx@biblioinstance=\count310
-\labelnumberwidth=\skip56
-\labelalphawidth=\skip57
-\biblabelsep=\skip58
-\bibitemsep=\skip59
-\bibnamesep=\skip60
-\bibinitsep=\skip61
-\bibparsep=\skip62
-\bibhang=\skip63
+\labelnumberwidth=\skip59
+\labelalphawidth=\skip60
+\biblabelsep=\skip61
+\bibitemsep=\skip62
+\bibnamesep=\skip63
+\bibinitsep=\skip64
+\bibparsep=\skip65
+\bibhang=\skip66
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language86
@@ -311,20 +323,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count379
 \c@pageref=\count380
 \c@savedpageref=\count381
-\shorthandwidth=\skip64
-\shortjournalwidth=\skip65
-\shortserieswidth=\skip66
-\shorttitlewidth=\skip67
-\shortauthorwidth=\skip68
-\shorteditorwidth=\skip69
-\locallabelnumberwidth=\skip70
-\locallabelalphawidth=\skip71
-\localshorthandwidth=\skip72
-\localshortjournalwidth=\skip73
-\localshortserieswidth=\skip74
-\localshorttitlewidth=\skip75
-\localshortauthorwidth=\skip76
-\localshorteditorwidth=\skip77
+\shorthandwidth=\skip67
+\shortjournalwidth=\skip68
+\shortserieswidth=\skip69
+\shorttitlewidth=\skip70
+\shortauthorwidth=\skip71
+\shorteditorwidth=\skip72
+\locallabelnumberwidth=\skip73
+\locallabelalphawidth=\skip74
+\localshorthandwidth=\skip75
+\localshortjournalwidth=\skip76
+\localshortserieswidth=\skip77
+\localshorttitlewidth=\skip78
+\localshortauthorwidth=\skip79
+\localshorteditorwidth=\skip80
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -388,9 +400,9 @@ File: biblatex.cfg
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip78
+\labelindent=\skip81
 \enit@outerparindent=\dimen158
-\enit@toks=\toks22
+\enit@toks=\toks28
 \enit@inbox=\box50
 \enit@count@id=\count393
 \enitdp@description=\count394
@@ -400,8 +412,8 @@ Package: exercises 2000/05/17 v1.1 .dtx exercises file
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks23
-\verbatim@line=\toks24
+\every@verbatim=\toks29
+\verbatim@line=\toks30
 \verbatim@in@stream=\read3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -425,7 +437,7 @@ Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
 \c@exercises@exercisenumber=\count399
 \c@exercises@solutionnumber=\count400
 \c@i=\count401
-\exercises@parskipsave=\skip79
+\exercises@parskipsave=\skip82
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
@@ -449,25 +461,25 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
 (/usr/share/texlive/texmf-dist/tex/latex/exercise/exercise.sty
 Package: exercise 2014/10/20 v1.6 Exercise package (P.Pichaureau)
-\ExerciseSkipBefore=\skip80
-\ExerciseSkipAfter=\skip81
-\AnswerSkipBefore=\skip82
-\AnswerSkipAfter=\skip83
-\Exesep=\skip84
-\Exetopsep=\skip85
-\Exeparsep=\skip86
-\Exepartopsep=\skip87
-\Exeleftmargin=\skip88
-\Exerightmargin=\skip89
-\Exelabelwidth=\skip90
-\Exelabelsep=\skip91
-\ExerciseBefore=\skip92
-\QuestionBefore=\skip93
-\subQuestionBefore=\skip94
-\subsubQuestionBefore=\skip95
-\QuestionIndent=\skip96
-\subQuestionIndent=\skip97
-\subsubQuestionIndent=\skip98
+\ExerciseSkipBefore=\skip83
+\ExerciseSkipAfter=\skip84
+\AnswerSkipBefore=\skip85
+\AnswerSkipAfter=\skip86
+\Exesep=\skip87
+\Exetopsep=\skip88
+\Exeparsep=\skip89
+\Exepartopsep=\skip90
+\Exeleftmargin=\skip91
+\Exerightmargin=\skip92
+\Exelabelwidth=\skip93
+\Exelabelsep=\skip94
+\ExerciseBefore=\skip95
+\QuestionBefore=\skip96
+\subQuestionBefore=\skip97
+\subsubQuestionBefore=\skip98
+\QuestionIndent=\skip99
+\subQuestionIndent=\skip100
+\subsubQuestionIndent=\skip101
 \c@Exercise=\count402
 \c@Answer=\count403
 \c@ExePart=\count404
@@ -490,9 +502,9 @@ Package: exercise 2014/10/20 v1.6 Exercise package (P.Pichaureau)
 \ExePartDifficulty=\count416
 \@Answerbox=\box57
 \colonnesLevel=\count417
-\tempskipa=\skip99
-\tempskipb=\skip100
-\@savedmathindent=\skip101
+\tempskipa=\skip102
+\tempskipb=\skip103
+\@savedmathindent=\skip104
 )
 \c@theorem=\count418
 \c@assumptions=\count419
@@ -511,20 +523,20 @@ Package color Info: Driver file: pdftex.def on input line 147.
 (./lecture1.aux)
 \openout1 = `lecture1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -549,8 +561,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'lecture1.bbl' not found.
 
 No file lecture1.bbl.
-Package biblatex Info: Reference section=0 on input line 85.
-Package biblatex Info: Reference segment=0 on input line 85.
+Package biblatex Info: Reference section=0 on input line 86.
+Package biblatex Info: Reference segment=0 on input line 86.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count422
@@ -558,12 +570,12 @@ Package biblatex Info: Reference segment=0 on input line 85.
 \scratchbox=\box58
 \nofMPsegments=\count423
 \nofMParguments=\count424
-\everyMPshowfont=\toks25
+\everyMPshowfont=\toks31
 \MPscratchCnt=\count425
 \MPscratchDim=\dimen162
 \MPnumerator=\count426
 \makeMPintoPDFobject=\count427
-\everyMPtoPDFconversion=\toks26
+\everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -573,154 +585,102 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 106
+LaTeX Font Info:    Trying to load font information for U+msa on input line 105
 .
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 106
+LaTeX Font Info:    Trying to load font information for U+msb on input line 105
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+) [1
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 167--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
- []
-
-[5]
-Overfull \hbox (59.42218pt too wide) detected at line 227
+Overfull \hbox (59.42218pt too wide) detected at line 226
 []
  []
 
-
-Overfull \hbox (17.99806pt too wide) in paragraph at lines 233--236
+[5]
+Overfull \hbox (17.99806pt too wide) in paragraph at lines 232--235
 \OT1/cmr/m/it/12 1.d4Nf6 2.c4e6 3.Nc3Bb4 4.Nf3c5 5.e3Nc6 6.Bd3Bxc3+ 7.bxc3d6 8.
 e4e5 9.d5Ne7
  []
 
 
-Overfull \hbox (13.61456pt too wide) in paragraph at lines 233--236
+Overfull \hbox (13.61456pt too wide) in paragraph at lines 232--235
 \OT1/cmr/m/it/12 17.Rb1Bd7 18.Rb2Rb8 19.Rbf2Qe7 20.Bc2g5 21.Bd2Qe8 22.Be1Qg6 23
 .Qd3Nh5
  []
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 258.
+e 257.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 272.
+e 271.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 286.
+e 285.
 
 
-Overfull \hbox (28.12325pt too wide) in paragraph at lines 286--287
+Overfull \hbox (28.12325pt too wide) in paragraph at lines 285--286
 []\OT1/cmr/m/n/12 The el-e-men-tary events are HHHH, HHHT,HHTH,....,TTTT.
  []
 
 
-LaTeX Warning: Citation 'Ross' on page 6 undefined on input line 293.
+LaTeX Warning: Citation 'Ross' on page 6 undefined on input line 292.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
-
- []
-
-
-Package Exercise Warning: An answer has no reference and no number on input lin
-e 296.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 302.
+e 295.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 308.
+e 301.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 307.
 
 [6] [7] [8]
-Overfull \hbox (122.00961pt too wide) in paragraph at lines 346--347
-[]\OT1/cmr/m/it/12 The sam-ple space is $\OT1/cmr/m/n/12 
+Overfull \hbox (104.87686pt too wide) in paragraph at lines 345--346
+[]\OT1/cmr/bx/n/12 Example 1.8 \OT1/cmr/m/n/12 (Two dice rolled)\OT1/cmr/bx/n/1
+2 . []\OT1/cmr/m/it/12 The sam-ple space is $\OT1/cmr/m/n/12 
  = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)\OM
 L/cmm/m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm
 /m/it/12 ; :::; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6)\OML/cmm
@@ -730,29 +690,7 @@ L/cmm/m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm
  []
 
 [9]
-Overfull \hbox (0.34341pt too wide) in paragraph at lines 354--356
-\OT1/cmr/m/it/12 For three tosses, $\OT1/cmr/m/n/12 
-[] = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 000\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 00
-1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 010\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 011\O
-ML/cmm/m/it/12 ; \OT1/cmr/m/n/12 100\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 101\OML/
-cmm/m/it/12 ; \OT1/cmr/m/n/12 110\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 111\OMS/cms
-y/m/n/12 g \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]x[]x[] ;  x[
-] \OMS/cmsy/m/n/12 2
- []
-
-
-Overfull \hbox (23.68365pt too wide) in paragraph at lines 359--360
-[]\OT1/cmr/m/it/12 Suppose
- []
-
-
-Overfull \hbox (6.242pt too wide) in paragraph at lines 364--366
-[]\OT1/cmr/m/it/12 A non-trivial gen-er-al-iza-tion of $\OML/cmm/m/it/12 n$ \OT
-1/cmr/m/it/12 coin
- []
-
-[10]
-Overfull \hbox (6.98056pt too wide) in paragraph at lines 399--400
+Overfull \hbox (6.98056pt too wide) in paragraph at lines 398--399
 \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 000\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 001\OML
 /cmm/m/it/12 ; \OT1/cmr/m/n/12 010\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 100\OMS/cm
 sy/m/n/12 g \ f\OT1/cmr/m/n/12 001\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 010\OML/cm
@@ -763,35 +701,36 @@ f\OT1/cmr/m/n/12 001\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 010\OML/cmm/m/it/12 ; \O
 T1/cmr/m/n/12 100\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . Note
  []
 
+[10]
 
-LaTeX Warning: Citation 'Feller' on page 11 undefined on input line 407.
+LaTeX Warning: Citation 'Feller' on page 11 undefined on input line 406.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 419.
+e 418.
 
 [11]
 
-LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 437.
+LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 436.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 439.
+e 438.
 
 
-Overfull \hbox (8.71788pt too wide) detected at line 440
+Overfull \hbox (8.71788pt too wide) detected at line 439
 []
  []
 
 
-LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 448.
+LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 447.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 452.
+e 451.
 
 
-Overfull \hbox (68.85707pt too wide) detected at line 460
+Overfull \hbox (68.85707pt too wide) detected at line 459
 \OML/cmm/m/it/12 E \OMS/cmsy/m/n/12 [ \OML/cmm/m/it/12 F \OT1/cmr/m/n/12 = \OMS
 /cmsy/m/n/12 f\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)\OML/cmm/m
 /it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm/m/it/1
@@ -809,38 +748,433 @@ m/n/12 5)\OMS/cmsy/m/n/12 g
  []
 
 
-LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 471.
+LaTeX Warning: Citation 'Ross' on page 12 undefined on input line 470.
 
 
 Package Exercise Warning: An answer has no reference and no number on input lin
-e 476.
+e 475.
 
-[12] [13] [14]
-Overfull \hbox (4.75192pt too wide) in paragraph at lines 562--563
-[]\OT1/cmr/m/it/12 Assume that we throw a bal-anced dice. Then
- []
-
-[15] [16]
-Overfull \hbox (22.87436pt too wide) in paragraph at lines 593--595
+[12] [13] [14] [15]
+Overfull \hbox (22.87436pt too wide) in paragraph at lines 585--587
 []\OT1/cmr/m/n/12 Let's con-sider the event $\OML/cmm/m/it/12 E \OT1/cmr/m/n/12
  = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 ![]; :::; ![]\OMS/cmsy/m/n/12 g$ \OT1/cmr
 /m/n/12 (or more gen-er-ally $\OML/cmm/m/it/12 E \OT1/cmr/m/n/12 = \OMS/cmsy/m/
 n/12 f\OML/cmm/m/it/12 ![]; :::; ![]\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ).
  []
 
+[16]
+
+LaTeX Warning: Reference `ss:independence' on page 17 undefined on input line 6
+08.
+
+
+Overfull \hbox (53.12329pt too wide) in paragraph at lines 608--609
+[]\OT1/cmr/bx/n/12 Example 3.7 \OT1/cmr/m/n/12 ( The sum of two dice )\OT1/cmr/
+bx/n/12 . []\OT1/cmr/m/it/12 The sam-ple space is $\OT1/cmr/m/n/12 
+ = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)\OM
+L/cmm/m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm
+/m/it/12 ::::\OT1/cmr/m/n/12 (6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6)\OMS/cmsy/m
+/n/12 g \OT1/cmr/m/n/12 =
+ []
+
+[17] [18]
+Overfull \hbox (31.60042pt too wide) in paragraph at lines 673--674
+\OT1/cmr/m/n/12 we as-sume that $\OML/cmm/m/it/12 A \OT1/cmr/m/n/12 = \OMS/cmsy
+/m/n/12 f\OML/cmm/m/it/12 ![]; :::; ![]; ![]:::; ![]\OMS/cmsy/m/n/12 g$\OT1/cmr
+/m/n/12 , and that $\OML/cmm/m/it/12 B \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML
+/cmm/m/it/12 ![]; :::; ![]; ![]; :::; ![]\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
+ []
+
+
+Overfull \hbox (2.42188pt too wide) detected at line 680
+\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 ) + \U/msb/m/
+n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@
+ \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 \ \OML/cmm
+/m/it/12 B\OT1/cmr/m/n/12 ) = \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+![]\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 ::: \OT1/cmr/m/n/12 + \U/msb/m/n/12 P\O
+T1/cmr/m/n/12 (\OML/cmm/m/it/12 ![]\OT1/cmr/m/n/12 ) + \U/msb/m/n/12 P\OT1/cmr/
+m/n/12 (\OML/cmm/m/it/12 ![]\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 ::: \OT1/cmr/m
+/n/12 + \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ![]\OT1/cmr/m/n/12 ) =
+ \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 [ \OML/cmm
+/m/it/12 B\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
+ []
+
+
+LaTeX Warning: Reference `' on page 19 undefined on input line 697.
+
+
+LaTeX Warning: Reference `' on page 19 undefined on input line 697.
+
+[19]
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 705.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 707.
+
+
+LaTeX Warning: Reference `e:unif' on page 20 undefined on input line 707.
+
+
+Overfull \hbox (2.80278pt too wide) in paragraph at lines 707--710
+[]\OT1/cmr/m/n/12 The sam-ple space is $
+ = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML
+/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (1\OML/cmm/
+m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)\OML/cmm/m/it/1
+2 :::; \OT1/cmr/m/n/12 (6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ;
+ \OT1/cmr/m/n/12 6)\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ,
+ []
+
+
+LaTeX Warning: Reference `ss:independence' on page 20 undefined on input line 7
+13.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 725.
+
+
+LaTeX Warning: Reference `e:unif' on page 20 undefined on input line 727.
+
+
+Overfull \hbox (41.76741pt too wide) in paragraph at lines 727--728
+\OT1/cmr/m/n/12 which is 0. We have to cal-cu-late the prob-a-bil-ity of $\OMS/
+cmsy/m/n/12 f\OT1/cmr/m/n/12 011111111\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 101111
+111\OML/cmm/m/it/12 ; ::::\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
+ []
+
+
+LaTeX Warning: Reference `c:' on page 20 undefined on input line 732.
+
+
+LaTeX Warning: Citation 'Ross' on page 20 undefined on input line 741.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 745.
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 753.
+
+
+Overfull \hbox (65.95497pt too wide) detected at line 754
+[]
+ []
+
+
+Overfull \hbox (35.24963pt too wide) detected at line 754
+[]
+ []
+
+
+LaTeX Warning: Citation 'Ross' on page 20 undefined on input line 757.
+
+
+LaTeX Warning: Reference `e:independence' on page 20 undefined on input line 76
+3.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 766.
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 768.
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 771.
+
+
+Overfull \hbox (114.87625pt too wide) detected at line 775
+[]
+ []
+
+
+Overfull \hbox (35.24963pt too wide) detected at line 775
+[]
+ []
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 778.
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 780.
+
+
+Overfull \hbox (129.16853pt too wide) detected at line 781
+[]
+ []
+
+
+Overfull \hbox (35.24963pt too wide) detected at line 781
+[]
+ []
+
+
+Overfull \hbox (44.80946pt too wide) detected at line 783
+[]
+ []
+
+
+Overfull \hbox (35.24963pt too wide) detected at line 783
+[]
+ []
+
+
+LaTeX Warning: Citation 'Ross' on page 20 undefined on input line 788.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 794.
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 795.
+
+
+Overfull \hbox (121.5929pt too wide) detected at line 796
+[]
+ []
+
+[20] [21] [22] [23] [24]
+
+LaTeX Warning: Reference `e:fund' on page 25 undefined on input line 808.
+
 ! Undefined control sequence.
-<argument> \split@tag \begin {split}  \mathhbb 
-                                               {P}(E)=\frac {\textrm {number...
-l.595 ...textrm{number of elements of $\Omega$}}.}
-                                                  
+<recently read> \mathb 
+                       
+l.808 ...\eqref{e:fund} to be satisfied by $\mathb
+                                                  {P}(\cdot|B)$. Using that ...
+
 ? 
+[25]
+
+LaTeX Warning: Reference `e:p1' on page 26 undefined on input line 831.
+
+
+LaTeX Warning: Reference `ss:ind' on page 26 undefined on input line 833.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 834.
+
+
+Overfull \hbox (6.86453pt too wide) in paragraph at lines 834--835
+[]\OT1/cmr/m/n/12 The sam-ple space is $
+ = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 i; j\OT1/cmr/m/n/12 ) \O
+ML/cmm/m/it/12 ;  i; j \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; 
+\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cm
+r/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/1
+2 6\OMS/cmsy/m/n/12 gg$\OT1/cmr/m/n/12 ,
+ []
+
+[26]
 ! Undefined control sequence.
-<argument> \split@tag \begin {split}  \mathhbb 
-                                               {P}(E)=\frac {\textrm {number...
-l.595 ...textrm{number of elements of $\Omega$}}.}
-                                                  
+l.844 \endi
+           {example}
 ? 
-[17] (./lecture1.aux)
+
+LaTeX Warning: Citation 'Feller' on page 27 undefined on input line 857.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 859.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.859 ...No two dice show the same face is $A=\{\(
+                                                  i,j,k)\in \Omega\,,\, i\ne...
+
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.859 ...2 =\{(i,1,k)\in \Omega\}$ and $B_3 = \{\(
+                                                  i,j,1)\in \Omega\}$.  Thus
+? 
+
+Overfull \hbox (1.29277pt too wide) in paragraph at lines 859--861
+[]\OT1/cmr/m/it/12 The sam-ple space is $\OT1/cmr/m/n/12 
+ = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 i; j; k\OT1/cmr/m/n/12 )
+ \OML/cmm/m/it/12 ; i; j; k \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/
+12 ; ::::\OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 gg$\OT1/cmr/m/it/12 ,
+ []
+
+[27]
+
+! LaTeX Error: \begin{example} on input line 838 ended by \end{definition}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.880 \end{definition}
+                      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--885
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 914--915
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 915--917
+
+ []
+
+
+! Package keyval Error: Given at Harvard med students and failed by the majorit
+y undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.930 ... med students and failed by the majority]
+                                                   At the moment 1/1000 has ...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.930 ... med students and failed by the majority]
+                                                   At the moment 1/1000 has ...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.930 ... med students and failed by the majority]
+                                                   At the moment 1/1000 has ...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.930 ... med students and failed by the majority]
+                                                   At the moment 1/1000 has ...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.931 	\Question Y
+                  ou make the test and you are tested positive. What is the ...
+
+? 
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 934.
+
+
+Overfull \hbox (35.24832pt too wide) in paragraph at lines 934--935
+[]\OT1/cmr/m/n/12 Let the sam-ple space be $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 C; P\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 C; N\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 NC; P\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 NC; N\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ,
+ []
+
+[30] [31]
+Overfull \hbox (11.82724pt too wide) detected at line 956
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--964
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 973--974
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 976--977
+
+ []
+
+
+LaTeX Warning: Reference `' on page 33 undefined on input line 1000.
+
+
+Overfull \hbox (55.53883pt too wide) in paragraph at lines 1000--1000
+[]\OT1/cmr/m/n/12 For the first ques-tion, look at the sam-ple space $
+ = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 M; M\OT1/cmr/m/n/12 )\OM
+L/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 M; F\OT1/cmr/m/n/12 )\OML/cmm
+/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 F; M\OT1/cmr/m/n/12 )\OML/cmm/m/it
+/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 F; F\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g
+$
+ []
+
+[33]
+Overfull \hbox (45.78693pt too wide) detected at line 1006
+[]
+ []
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 1017.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 1031.
+
+
+Overfull \hbox (84.21346pt too wide) in paragraph at lines 1032--1034
+\OT1/cmr/m/n/12 If you want you can in-tro-duce the sam-ple space of $
+ = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 RR; R\OT1/cmr/m/n/12 )\O
+ML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 RB; R\OT1/cmr/m/n/12 )\OML/c
+mm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 RB; B\OT1/cmr/m/n/12 )\OML/cmm/m
+/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 BB; B\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/
+12 g$\OT1/cmr/m/n/12 ,
+ []
+
+[34]
+Overfull \hbox (25.82068pt too wide) detected at line 1043
+[]
+ []
+
+[35]
+Overfull \hbox (3.75494pt too wide) in paragraph at lines 1047--1048
+\OT1/cmr/m/n/12 Thus it is not $\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 B\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 )$ that mat-ters, but on
+ly its rel-a-tive value $\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B\OMS
+/cmsy/m/n/12 j\OML/cmm/m/it/12 A\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =\U/msb/m/n/1
+2 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 A\OT1/
+cmr/m/n/12 )$.
+ []
+
+[36] (./lecture1.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -854,31 +1188,32 @@ Package logreq Info: Writing requests to 'lecture1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11729 strings out of 479304
- 209199 string characters out of 5869779
- 922863 words of memory out of 5000000
- 28796 multiletter control sequences out of 15000+600000
- 412091 words of font info for 59 fonts, out of 8000000 for 9000
+ 11829 strings out of 479304
+ 210322 string characters out of 5869779
+ 939887 words of memory out of 5000000
+ 28891 multiletter control sequences out of 15000+600000
+ 412450 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,21n,89p,911b,1239s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,27n,89p,1147b,1324s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1200.pfb>
-Output written on lecture1.pdf (17 pages, 187988 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1200.pfb>
+Output written on lecture1.pdf (36 pages, 261908 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 181 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

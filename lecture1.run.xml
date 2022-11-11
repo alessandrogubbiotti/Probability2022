@@ -78,8 +78,5 @@
     <requires type="dynamic">
       <file>lecture1.bcf</file>
     </requires>
-    <requires type="editable">
-      <file>probability.bib</file>
-    </requires>
   </external>
 </requests>
