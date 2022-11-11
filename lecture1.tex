@@ -1067,6 +1067,170 @@ Thus it is not $\mathbb{P}(B|A)$ that matters, but only its relative value $\mat
 Plugging in this value, one obtains that
 \bel{}{p\geq 10/11}
 At the end, the man has been judged guilty. 
+\section{Two experiments}
 
+Suppose that we have that we observe two experiments, one with sample space $\Omega_1$ and the other one with $\Omega_2$. We want to consider both experiments at the same time. 
+
+\subsection{ Example}
+
+The main example to have in mind for this section is the following. Imagine we want to throw two coins, each one of them in a fair way. The state space of the experiment is $\Omega=\{0,1\}\times\{0,1\}=\{00,01,10,11\}$. We think at this example as the experiment obtained by considering at the same time two identical experiments which consist in coin tosses. 
+Assume that the coin is fair, so that we know that A= "The first toss gave heads" = $\{10,11\}$ is $\mathbb{P}() = 1/2$. In the same way B=" The second toss gave heads" = $\{ 01,11\}$ has probability $\mathbb{P}(B)=1/2$. However this is not sufficient to determine the probabilities of a joint realization such as $\mathbb{P}(01)$. To determine $\mathbb{P}$ one needs information on how the two experiment are related or performed jointly, and there is not a unique way to do this. \\
+Suppose we glue together the two coins in such a way that they both give heads or both give tails. In this case the probability on $\Omega$ is 
+\bel{}{\mathbb{P}_1(1,1)=\mathbb{P}_1(0,0)=1/2,\,\,\,\,\mathbb{P}_1(1,0)=\mathbb{P}_1(0,1)=0.}
+In the same way, if we glue the two coins in such a way that, when one gives heads, the other one gives tails, we have that
+\bel{}{\mathbb{P}_2(1,0)=\mathbb{P}_2(0,1)=1/2,\,\,\,\,\mathbb{P}_2(0,0)=\mathbb{P}_2(1,1)=0.}
+
+\begin{ExerciseList}
+
+\Exercise Denote $A_1$=" The first result is 1", $A_0$=" The first result is 0", and $B_i$=" The first result is $i$", for i=0,1. 
+Show that 
+    \bel{}{ \mathbb{P}_1(A_i)=\mathbb{P}_2(A_i)=1/2.}
+Then show that the events $A_i$ and $B_j$ are not independent
+
+ \Answer Since $A_1=\{(1,1),(1,0)\}$,
+\bel{}{\mathbb{P}_1(A_1)=\mathbb{P}_1(1,1)+\mathbb{P}_1(1,0)=1/2+0=1/2,}
+and
+\bel{}{\mathbb{P}_2(A_1)=\mathbb{P}_2(1,1)+\mathbb{P}_2(1,0)=0+1/2=1/2.}
+The other cases are similar.
+In order to see that the events $A_i$ and $B_j$ are not independent, simply verify that 
+\bel{}{\mathbb{P}_1(A_i|B_j)=\begin{cases} 1 & \textrm{ if } i=j\\
+0 & \textrm{ if } \neq j, 
+\end{cases}}
+and that 
+\bel{}{\mathbb{P}_2(A_i|B_j)=\begin{cases} 0 & \textrm{ if } i=j\\
+1 & \textrm{ if } \neq j. 
+\end{cases}}
+\end{ExerciseList}
+
+Another way to perform the two con tosses is the following: we throw a coin, observe the result and then, independently we throw the other one. The way we can see this is through the following formula, valid for $i,j\in\{0,1\}$: 
+\bel{e:cond1}{\mathbb{P}((i,j))=\mathbb{P}(A_i\cap B_j)=\mathbb{P}(B_j|A_i)\mathbb{P}(A_i).}
+Now we use the hypothesis of independence: $\mathbb{P}(A_i | B_j) = \mathbb{P}(A_i) =1/2 $, so that above \eqref{e:cond1} becomes 
+\bel{}{\mathbb{P}(i,j) = \mathbb{P}(A_i \cap B_j) = \mathbb{P}(A_i)\mathbb{P}(B_j) = 1/4.}
+Formula \eqref{e:cond1} can be interpreted in this way: we throw the first coin, and then the second, where the probability of the second toss depends on the first one, and holds for every probability. In the case where the two coins are bounded to have the same result, we have that \bel{}{\mathbb{P}(A_1|B_1) &  =\mathbb{P}(A_2|B_2) = 1\\ \mathbb{P}(A_1|B_2) &= \mathbb{P}(A_2| B_1) = 0.} 
+
+\subsection{Sample space of two experiments}
+
+We generalise what we have said in the previous example. There is a standard way to define the sample space of an experiment which is the union of two experiments. Let $\Omega_1=\{\omega_1,...,\omega_n\}$ be the sample of the first experiment and $\Omega_2 =\{\eta_1,...,\eta_m\}$ be the sample space of the second experiment. The  event "$\omega_1$ happened" is no longer elementary when we consider the two experiments together: for example, "$\omega_1$ and $\eta_3$ happened " is contained in "$\omega_1 $ happened". The elementary events are those of the form "$\omega_i$ and $\eta_j$ happened", and we will denote those events by $(\omega_i,\eta_j)$. Thus, the sample space of the two experiments is: 
+\begin{definition}
+The sample space of the experiment which is the union of the two experiments $\Omega_1=\{\omega_1,...,\omega_n\}$ and $\Omega_2=\{\eta_1,...,\eta_m\}$ is $\Omega=\Omega_1\times \Omega_2=\{(\omega_i,\eta_j)\,,\,i=1,..,n, j=1,..,m\}$
+\end{definition}
+\begin{ExerciseList}
+
+\Exercise How many elements does $\Omega$ have?
+\Answer $n\times m $. To see this, note that for each $i=1,..,n$ there are $m$ different elementary events: $(i,1),...(i,m)$. Since $i$ varies from 1 to $n$, we sum $m$ for a total of $n$ times.
+
+\end{ExerciseList}
+
+\begin{example}[Two dice] The state space of the roll of two dice $\Omega=\{(1,1),(1,2),...,(6,6)\}$ can be thought as the state space of the union of two experiments which consist in rolling a die. That is $\Omega=\{1,2,3,4,5,6\}\times \{1,2,3,4,5,6\}$\\
+\end{example}
+
+
+\subsection{Joint probability}
+
+The complete probabilistic description of the two experiments is given by a probability on $\Omega$
+\begin{definition}[Joint probability]
+The joint probability of the two experiments is a probability $\mathbb{P}$ on $\Omega=\Omega_1\times \Omega_2$, the state space of the two experiments.
+\end{definition}
+
+The knowledge of the probability of the joint realization of the two experiment is given by the joint probability. \\
+
+We now show that, knowing the joint probability, we know the probability $\mathbb{P}_1$ on $\Omega_1$ and $\mathbb{P}_2$ on $\Omega_2$, of each experiment separately.
+To see this, notice that the event $\omega_i$="$\omega_i$ happened" is $\{\omega_i\}\times\Omega_2=\{(\omega_i,\eta_1),...,(\omega_i,\eta_m)\}$, and the event $\eta_j$ = "$\eta_j$ happened" is the event $\Omega_1\times\{\eta_j\}=\{(\omega_1,\eta_j),...,(\omega_n,\eta_j)\}$.  
+
+Thus 
+\bel{}{\mathbb{P}(\omega_i) &= \mathbb{P}(\omega_i,\eta_1)+....+\mathbb{P}(\omega_i,\eta_m) \\
+\mathbb{P}(\eta_j) &= \mathbb{P}(\omega_1,\eta_j)+...+\mathbb{P}(\omega_n,\eta_j).}
+The probability on the first and the second experiment are called, respectively, the first and the second marginal
+\begin{definition}
+Let $\Omega= \Omega_1\times \Omega_2$ and let $\mathbb{P}$ be a probability of $\Omega$ (the joint probability of the two experiment.
+The first marginal $\mathbb{P}_1$ is the probability on $\Omega_1$ defined by
+\bel{d:marg1}{\mathbb{P}_1(\omega_i) = \mathbb{P}(\omega)=\mathbb{P}(\omega_i,\eta_1)+...+\mathbb{P}(\omega_i,\eta_m).}
+The second marginal is the probability $\mathbb{P}_2$ on $\Omega_2$ defined by 
+\bel{d:marg2}{\mathbb{P}_2(\eta_j) = \mathbb{P}(\omega_1,\eta_j)+....+ \mathbb{P}(\omega_n, \eta_j).}
+\end{definition}
+
+\begin{ExerciseList}
+
+\Exercise
+On $\Omega=\{0,1\}\times\{0,1\}$ with probability $\mathbb{P}$ defined by
+\bel{}{\mathbb{P}(0,0)=(1-q)(1-p)\,\,,\,\,\,\mathbb{P}(0,1)=(1-p)q,\\ \mathbb{P}(1,0)=p(1-q),\,\,\,\mathbb{P}(1,1)=pq,}
+find the marginals of $\mathbb{P}$.
+
+\Exercise Look at the examples at the beginning of this section 
+($\mathbb{Q}(00)=\mathbb{Q}(11)=1/2$, and $\mathbb{P}(01)=\mathbb{P}(10)=1/2$ for the glued coins, $\mathbb{P}(ij)= 1/4$ for all $ij\in\Omega$ for the independent coins) 
+and check that they have the same marginals.
+
+\Exercise
+Consider on $\Omega=\{(r,r),(r,b),(r,g), (b,r),(b,b),(b,g),(g,r),(g,b),(g,g)\}=\{(r,b,g)\}\times\{(r,b,g)\}$ the probability 
+\bel{}{\mathbb{P}((b,b))=\mathbb{P}((g,g))=\mathbb{P}()=\mathbb{P}((r,r))=0,} and $1/6$ for the other elementary events.  Calculate the marginal over $\Omega_2$, $\mathbb{P}_2$.
+Repeat the exercise with the uniform probability $\mathbb{Q}$ on $\Omega$.
+
+\end{ExerciseList}
+
+As we saw in the example of the previous section, the marginals is not enough to recover $\mathbb{P}$. We can recover $\mathbb{P}$ if  know the probability of the second experiment once a given a realization of the first experiment (or viceversa).
+To see this
+\bel{e:p}{\mathbb{P}(\omega_i,\eta_j) = \sum_{i=1}^n \mathbb{P}(\eta_j|\omega)\mathbb{P}(\omega_j)=\sum_{i=1}^n\mathbb{P}(\eta_j|\omega_i)\mathbb{P}_1(\omega_i),}
+ where we recall that $\mathbb{P}(\eta_j| \omega_i) = \mathbb{P}(\omega_i,\eta_j)/\mathbb{P}(\omega_i).$
+ Thus, in order to recover $\mathbb{P}$ it suffices to know the probability of the first experiment $\mathbb{P}_1$ and of the conditional probabilities on the second experiment $\mathbb{P}(\cdot | \omega_i),$ for $i=1,...,n$. 
+ The interpretation is that first you observe the first experiment, and then we look at the second knowing what happened in the first. Usually are the probabilities $\mathbb{P}_1$ and $\mathbb{P}(\cdot | \omega_i)$ which are given, and $\mathbb{P} is defined by \eqref{e:p}$.
+ 
+\begin{ExerciseList}
+\Exercise Repeat Exercise 2, but this time calculate the conditional probabilities $\mathbb{P}_{2|1}$.
+\end{ExerciseList}
+
+
+
+
+\subsection{Independent experiments}
+When you regard the experiments as independent, then the probabilities  $\mathbb{P}(\eta_j|\omega_i)= \mathbb{P}_2(\eta_j)$.
+In this case $\mathbb{P}(\omega_i,\eta_j) = \mathbb{P}_1(\omega_i)\mathbb{P}(\eta_j)$, so that $\mathbb{P}$ is determined by the probability of the two experiments.  However you have to keep in mind that independence has to be regarded as an hypotheses on the probability $\mathbb{P}(\eta_j | \omega_i) $ and you cannot tell that it is true a priori: it is a property of the probability that you are assignign in $\Omega$. 
+
+\begin{definition}
+We say that the two experiments are independent if \bel{e:indexp}{\mathbb{P}(\omega_i,\eta_j)=\mathbb{P}("\omega_i \textrm{happens}")\mathbb{P}("\eta_j" happens)=\mathbb{P}_1(\omega_i)\mathbb{P}_2(\eta_j).}
+\end{definition}
+The relation \eqref{e:indexp}  is called independence because is equivalent to $\mathbb{P}("\eta_j \textrm{happens} \vert "\omega_i \,\textrm{happens}")=\mathbb{P}("\eta_j happens"),$ that is, the probability that $\eta_j$ happens does not change if we observe $\omega_j$. 
+
+
+\begin{example} the sample space for the roll of a die is $\Omega=\{1,...6\}$. It is natural to put the uniform probability to each roll of the die, that is $\mathbb{P}(1)=...=\mathbb{P}(6)=1/6$. Why did we use the uniform probability on the outcomes of the roll of two dice? In this case $\Omega=\{(1,1),(1,2),...,(6,6)\}$. The fact is that the two rolls are independent:
+\bel{e:uniform}{\mathbb{P}(i,j)=\mathbb{P}(i)\mathbb{P}(j)=1/36\,\,\,\textrm{ for every } i,j=1,..,6.}
+This is precisely the uniform probability on $\Omega$.
+
+\end{example}
+
+\begin{ExerciseList}
+\Exercise Assume that two experiments $\Omega_1=\{\omega_1,...,\omega_n\}$ $\Omega_2=\{\eta_1,...,\eta_m\}$ have the uniform probability (let $\mathbb{P}_i$ denote the uniform probability of $\Omega_i$). Show that, if they are independent, then the joint experiment $\Omega=\Omega_1\times\Omega_2$ have the uniform probability.
+\Answer  
+\bel{}{\mathbb{P}(\omega_i,\eta_j)=\mathbb{P}_1(\omega_i)\mathbb{P}_2(\eta_j)=\frac{1}{n}\frac{1}{m}}
+Since the number of elements in $\Omega$ is $m\cdot n$, this is precisely the uniform probability.
+\end{ExerciseList}
+
+\subsection{ Extractions}
+We are now able to discuss rigourously the probability distribution of two extractions. 
+
+\begin{ExerciseList}
+
+\Exercise In an urn there are 4 red balls and 2 blue balls. We draw a ball, we reinsert it and then, independently from the first draw, we draw another ball. What is the probability of drawing balls of different color? 
+
+\Exercise  There are $8$ lottery tickets, and each one of them is winning with probability $1/8$ \emph{independently} from the others. You buy $3$ tickets. What is the probability that at least one of them is winning.  Hint: consider the complementary event and use the independence. 
+
+\Exercise There are $8$ lottery tickets, $4$ of which are winning. You buy $3$ tickets. What is the probability that at least one of them is winning.  Hint: consider the complementary event and
+define the number \bel{}{X_i=\begin{cases}
+1 & \textrm{if i-th first ticket is losing }\\
+0 & \textrm{ if the i-th ticket is winning}.
+\end{cases}
+} for $i=1,2,3$. Using formula \eqref{e:chain} you should be able to calculate $\mathbb{P}(X_1=1,X_2=1,X_3=1)$.
+
+\Answer We need to compute the probability of the event A=" At least one ticket is winning". Consider the event $A^c$=" All the tickets are losing". We can proceed as follows: number your tickets from $1$ to $r$. Denote  
+\bel{}{X_i=\begin{cases}
+1 & \textrm{if i-th first ticket is losing }\\
+0 & \textrm{ if the i-th ticket is winning}.
+\end{cases}
+}
+The event $A^c$ is the event $(X_1=1,...,X_r=r)$. We are therefore in the situation of the Bernoulli trials and we can use formula \eqref{e:chain} and write 
+\bel{}{\mathbb{P}(X_1=1,...,X_r=1)=\mathbb{P}(X_r=1|X_{r-1}=1,...,X_1=1)...\mathbb{P}(X_2=1|X_1=1)\mathbb{P}(X_1=1).}
+We now need to observe that the $\mathbb{P}(X_k=1|X_{k-1}=1...X_1=1)=(n-m-(k-1))/n-(k-1)$, since knowing that the tickets 1,...k-1 are losing, there are left  $n-(k-1)$ tickets, of which  $n-m-(k-1)$ are losing. Thus
+\bel{}{\mathbb{P}(A)=1-\mathbb{P}(A^c)=1-\frac{(n-m)(n-m-1)...(n-m-(r-1))}{n(n-1)...(n-(r-1)).}}
+
+\end{ExerciseList}
 
 \end{document}
