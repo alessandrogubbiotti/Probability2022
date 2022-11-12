@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.27)  11 NOV 2022 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.9.27)  12 NOV 2022 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**lecture1.tex
+**lecture1.tex lecture2.pdf
 (./lecture1.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03>
@@ -1125,7 +1125,76 @@ ly its rel-a-tive value $\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 B\OMS
 cmr/m/n/12 )$.
  []
 
-[36] (./lecture1.aux)
+[36]
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 1092.
+
+[37] [38]
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 1122.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1138
+
+ []
+
+[39]
+Overfull \hbox (56.05145pt too wide) in paragraph at lines 1168--1169
+[]\OT1/cmr/m/n/12 Consider on $
+ = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r; r\OT1/cmr/m/n/12 )\OM
+L/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r; b\OT1/cmr/m/n/12 )\OML/cmm
+/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r; g\OT1/cmr/m/n/12 )\OML/cmm/m/it
+/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b; r\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
+ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b; b\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1
+/cmr/m/n/12 (\OML/cmm/m/it/12 b; g\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/
+m/n/12 (\OML/cmm/m/it/12 g; r\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 g; b\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\O
+ML/cmm/m/it/12 g; g\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g \OT1/cmr/m/n/12 =
+ []
+
+[40]
+Overfull \hbox (101.23483pt too wide) in paragraph at lines 1195--1196
+[]\OT1/cmr/m/n/12 The re-la-tion [][][] is called in-de-pen-dence be-cause is e
+quiv-a-lent to $\U/msb/m/n/12 P\OT1/cmr/m/n/12 ("\OML/cmm/m/it/12 ^^Q[][]\OMS/c
+msy/m/n/12 j\OT1/cmr/m/n/12 "\OML/cmm/m/it/12 ![] []\OT1/cmr/m/n/12 ") =
+ []
+
+
+Overfull \hbox (1.1068pt too wide) in paragraph at lines 1205--1207
+[]\OT1/cmr/m/n/12 Assume that two ex-per-i-ments $
+[] = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 ![]; :::; ![]\OMS/cmsy/m/n/12 g$ $\OT1/
+cmr/m/n/12 
+[] = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 ^^Q[]; :::; ^^Q[]\OMS/cmsy/m/n/12 g$
+ []
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 1207.
+
+[41]
+
+LaTeX Warning: Reference `e:chain' on page 42 undefined on input line 1225.
+
+
+Package Exercise Warning: An answer has no reference and no number on input lin
+e 1227.
+
+
+LaTeX Warning: Reference `e:chain' on page 42 undefined on input line 1233.
+
+
+Overfull \hbox (51.837pt too wide) detected at line 1234
+[]
+ []
+
+[42] [43] (./lecture1.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1139,13 +1208,13 @@ Package logreq Info: Writing requests to 'lecture1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11822 strings out of 479304
- 210194 string characters out of 5869779
- 939883 words of memory out of 5000000
- 28885 multiletter control sequences out of 15000+600000
+ 11833 strings out of 479304
+ 210301 string characters out of 5869779
+ 939954 words of memory out of 5000000
+ 28896 multiletter control sequences out of 15000+600000
  412091 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,27n,89p,1147b,1240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,27n,89p,1160b,1240s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dis
@@ -1160,10 +1229,10 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfrm1200.pfb>
-Output written on lecture1.pdf (36 pages, 251200 bytes).
+Output written on lecture1.pdf (43 pages, 270569 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
