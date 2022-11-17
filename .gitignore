@@ -1,1 +1,6 @@
 chiaveprivata.txt
+*.log 
+*.aux
+*.run
+*.bcf
+Corrections/
