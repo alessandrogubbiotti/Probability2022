@@ -1258,6 +1258,81 @@ We now need to observe that the $\mathbb{P}(X_k=1|X_{k-1}=1...X_1=1)=(n-m-(k-1))
 
 \end{ExerciseList}
 
+\section{ Bernoulli Trials}
+\label{s:bernoulli}
+\comment{The aim of this section is to define the Bernoulli trials (coin tosses) and to make clear where do we use the hypothesis of independence and the hypothesis that we are throwing identical coins.}
+\subsection{Independent bernoulli trials}
+We treat again coin tosses, this time with a different notation. Let's start with two identical and independent coin tosses, where the sample space is $\Omega=\{0,1\}^2=\{(0,0),(0,1),(1,0),(1,1)\}=\{(x_1,x_2), \,x_1,x_2\in\{0,1\}\}$, and define 
+\bel{}{X_1=\begin{cases}
+1 & \textrm{ if the first toss gave heads}\\
+0 & \textrm{ if the first toss gave tails}
+\end{cases}}
+and
+\bel{}{X_2=\begin{cases}
+1 & \textrm{ if the second toss gave heads}\\
+0 & \textrm{ if the second toss gave tails}.
+\end{cases}}
+That is, $X_1$ is the result of the first coin toss and $X_2$ is the result of the second. The event "The second toss gave tails"$\{(0,0),(1,0)\}$ can be written as $(X_2=0)$,The elementary event $(1,0)$ can be written as $(X_1=1)\cap (X_2=0)=(X_1=1,X_2=0)$, and the event $(x_1,x_2)$ can be written as $(X_1=x_1)\cap (X_2=x_2)=(X_1=x_1,X_2=x_2)$, where $x_1,x_2\in\{0,1\}$.
+By hypothesis that we throw \emph{identical} coins, the probability of having heads is the same for the two coins, 
+$$\mathbb{P}("\textrm{The first coin gave heads}")=\mathbb{P}("\textrm{The first coin gave heads}")=p.$$
+Using the above notation we can say the same thing in a more compact form 
+\bel{}{\mathbb{P}(X_1=1)=\mathbb{P}(X_2=1)=p\in(0,1)\\
+\mathbb{P}(X_1=0)=\mathbb{P}(x_2=0)=1-p.}
+\comment{The hypothesis of identical coins are the equality $\mathbb{P}(X_1=1)=\mathbb{P}(X_2=1)$ and $\mathbb{P}(X_1=0)=\mathbb{P}(X_2=0)$}\\
+We can use the ideas of the previous section to calculate the probability $\mathbb{P}$ on $\Omega$. For example 
+\bel{}{\mathbb{P}((1,0))=\mathbb{P}(X_1=1,X_2=0)=\frac{\mathbb{P}(X_1=1,X_2=0)}{\mathbb{P}(X_1=1)}\mathbb{P}(X_1=1)=\mathbb{P}(X_2=0|X_1=1)\mathbb{P}(X_1=1).}
+Now we use the hypothesis of \emph{independent} trials: $\mathbb{P}(X_2=0|X_1=1)=\mathbb{P}(X_2=0)=1-p$. Thus,
+\bel{}{\mathbb{P}((1,0))=\mathbb{P}(X_1=0)\mathbb{P}(X_2=0)=p(1-p).}
+
+We can write the probability for the generic element of the sample space $(x_1,x_2),$ $x_1,x_2\in\{0,1\}$. Note that the following equality 
+\bel{}{p^x_1(1-p)^{1-x_1}=\begin{cases}
+p & \textrm{if } x_1=1\\
+1-p & \textrm{ if } x_1=0.
+\end{cases}}
+Thus 
+\bel{e:aux}{\mathbb{P}(X_1=x_1)=p^{x_1}(1-p)^{1-x_1}=\begin{cases}
+p & \textrm{if } x_1=1\\
+1-p & \textrm{ if } x_1=0.
+\end{cases}}
+ We can repeat the above calculations for the elementary event $(x_1,x_2)=(X_1=x_1)\cap(X_2=x_2)=(X_1=x_1,X_2=x_2)$, $x_1,x_2\in\{0,1\}$: 
+\bel{}{\mathbb{P}((x_1,x_2))=\mathbb{P}(X_1=x_1,X_2=x_2)=\frac{\mathbb{P}(X_1=x_1,X_2=x_2)}{\mathbb{P}(X_1=x_1)}\mathbb{P}(X_1=x_1)=\mathbb{P}(X_2=x_2|X_1=1)\mathbb{P}(X_1=x_1).}
+The hypothesis of independent tosses is is the following $\mathbb{P}(X_2=x_2|X_1=x_1)=\mathbb{P}(X_2=x_2)$ (The result of the second coin toss is independent form the first one), and gives 
+\bel{}{
+\mathbb{P}((x_1,x_2))=\mathbb{P}(X_1=1)\mathbb{P}(X_2=x_2).}
+Using \eqref{e:aux} one obtains 
+\bel{}{\mathbb{P}((x_1,x_2))=p^{x_1}(1-p)^{1-x_1}p^{x_2}(1-p)^{1-x_2}=p^{x_1+x_2}(1-p)^{2-(x_1+x_2)}.}
+\textbf{3 identical and independent Bernoulli trials:}\\
+We can repeat the calculations for 3 coin tosses. The sample space is $\Omega=\{(1,1,1),(1,1,0),...,(0,0,0)\}=\{0,1\}^3=\{(x_1,x_2,x_3)\,,\,x_i\in\{0,1\}\}$, and, again, we define
+\bel{}{X_i=\begin{cases}
+1 & \textrm{ if the i-th toss gave heads}\\
+0 & \textrm{ if the i-th toss gave tails}
+\end{cases}.}
+$X_i$ denotes the result of the $i$-th coin toss. We can repeat the computations to obtain
+\bel{}{\mathbb{P}((x_1,x_2,x_3)) &=\mathbb{P}(X_1=x_1,X_2=x_2,X_3=x_3) \\
+& = \frac{\mathbb{P}(X_1=x_1,X_2=x_2,X_3=x_3)}{\mathbb{P}(X_1=x_1,X_2=x_2)}\frac{\mathbb{P}(X_1=x_1,X_2=x_2)}{\mathbb{P}(X_1=x_1)\mathbb{P}(X_1=x_1)} \\ & =\mathbb{P}(X_3=x_3|X_2=x_2,X_1=x_1)\mathbb{P}(X_2=x_2|X_1=x_1)\mathbb{P}(X_1=x_1).}
+The hypothesis of independence of the 3 tosses is the following:
+$\mathbb{P}(X_2=x_2|X_1=x_1)=\mathbb{P}(X_2=x_2$, and $\mathbb{P}(X_3=x_3|X_2=x2,X_1=x_1)=\mathbb{P}(X_3=x_3)$, that is, the result of the third coin toss does not depend from the first two. This gives 
+\bel{}{\mathbb{P}((x_1,x_2,x_3))=\mathbb{P}(X_1=x_1)\mathbb{P}(X_2=x_2)\mathbb{P}(X_3=x_3).}
+Using \eqref{e:aux} one obtains 
+\bel{}{\mathbb{P}((x_1,x_2,x_3)) & =p^{x_1}(1-p)^{1-x_1}p^{x_2}(1-p)^{1-x_2}p^{x_3}(1-p)^{1-x_3} \\ &=p^{x_1+x_2+x_3}(1-p)^{3-(x_1+x_2+x_3)}.}
+\textbf{n identical and independent Bernoulli trials}\\
+We repeat what we have just said with $n$ tosses. The sample space is $\Omega=\{0,1\}^n=\{(x_1,x_2,...,x_n)\,,\,x_i\in\{0,1\}\}$, and, again, we define
+\bel{}{X_i=\begin{cases}
+1 & \textrm{ if the i-th toss gave heads}\\
+0 & \textrm{ if the i-th toss gave tails}
+\end{cases}.}
+$X_i$ denotes the result of the $i$-th coin toss. We can repeat the computations to obtain
+\bel{e:chain}{\mathbb{P}((x_1,x_2,...,x_n)) &=\mathbb{P}(X_1=x_1,X_2=x_2,...,X_n=x_n) \\
+& = \frac{\mathbb{P}(X_1=x_1,X_2=x_2,....,X_n=x_n)}{\mathbb{P}(X_1=x_1,...,X_{n-1}=x_{n-1})}....\frac{\mathbb{P}(X_1=x_1,X_2=x_2)}{\mathbb{P}(X_1=x_1)\mathbb{P}(X_1=x_1)} \\ & =\mathbb{P}(X_n=x_n|X_2=x_1,...,X_{n-1}=x_{n-1})...\mathbb{P}(X_2=x_2|X_1=x_1)\mathbb{P}(X_1=x_1).}
+The hypothesis of independence of the n tosses is the following:
+$\mathbb{P}(X_2=x_2|X_1=x_1)=\mathbb{P}(X_2=x_2)$.... $\mathbb{P}(X_n=x_n|X_2=x_2,....,X_{n-1}=x_{n-1})=\mathbb{P}(X_n=x_n)$, that is, the result of the third coin toss does not depend from the first two. This gives 
+\bel{e:indbern}{\mathbb{P}((x_1,x_2,...,x_n))=\mathbb{P}(X_1=x_1)\mathbb{P}(X_2=x_2)...\mathbb{P}(X_n=x_n)=\prod_{i=1}^n\mathbb{P}(X_i=x_i).}
+Using \eqref{e:aux} one obtains 
+\bel{}{\mathbb{P}((x_1,x_2,...,x_n)) & =p^{x_1}(1-p)^{1-x_1}p^{x_2}(1-p)^{1-x_2}...p^{x_n}(1-p)^{1-x_n} \\ &=p^{x_1+x_2+....+x_n}(1-p)^{3-(x_1+x_2+...+x_n)}.}
+\bel{e:bernoulli}{\mathbb{P}(x_1,...,x_n)=p^{x_1+...+x_n}(1-p)^{n-x_1-...-x_n}.}
+If one observes that the quantity $x_1+...+x_n$ is the number of heads of the elementary event $(x_1,...,x_n)$, that is $x_1+...+x_n=\#\textrm{Heads}$, the
+\bel{}{\mathbb{P}(x_1,x_2,...,x_n)=p^{\#\textrm{Heads}}(1-p)^{\#\textrm{Trials}-\#\textrm{Heads}}}
+
 \subsection{Bernoulli Trials}
 
 Imagine that we toss two identical unfair cois which have probability $p$ to give heads, and that the tosses are independent. The sample space is $\Omega_2 = \{00,01,10,11\}$. Define $X_1$ and $X_2$ as the result of the first and the second coin toss: 
@@ -1428,11 +1503,13 @@ However, if your experiment consists in looking just at the random variable, its
 
 
 
-\section{Actual Program}
 
 \section{Exam}
 
 \begin{ExerciseList}
+
+
+	\Exercise Anton and Barbara take turns rolling a die. The first one that obtains 6 wins. Describe the sample space and write the event $A=$"Anton wins" in terms of the elementary events. To which event $A^c$ corresponds? 
 
 	\Exercise Let $\Omega = \{00,01,02,10,11,12,20,21,22\}= \{x_1x_2\,,\,x_1,x_2\in\{0,1,2\}\}$ be the space of strings of two digit, where each digit can take the value 0,1 or 2. Let $\mathbb{P}$ be a probability defined on $\Omega$ by 
 	\bel{}{ & \mathbb{P}(01) = \mathbb{P}(12) = \mathbb{P}(00)=\mathbb{P}(11) = 1/8 \\
@@ -1447,20 +1524,41 @@ However, if your experiment consists in looking just at the random variable, its
 		 \Question The event B= "Both digits are equal" is the event $B = \{00,11,22\}$. The exercise asks to compute $\mathbb{P}(A|B)$. Since $A\cap B = \{1\}$, $\mathbb{P}(A\cap B) = \mathbb{P}(11)= 1/8$. The probability of $B$ is given by $\mathbb{P}(B) = \mathbb{P}(00)+\mathbb{P}(11)+\mathbb{P}(22) = 1/8+ 1/8+1/4= 1/2 $. Thus 
 		 \bel{}{\mathbb{P}(A|B) =\frac{ \mathbb{P}(A\cap B)}{\mathbb{P}(B)} = \frac{1/8}{1/2}= 1/4.}
 
-	\Exercise (Sample Space) 
 
-	\Exercise (Extractions with replacement)  
+	\Exercise We have two urns, one containing $3$ red balls, $1$ blue ball, and one white ball, the other one containing 3 blue balls, 1 red ball and 1 white ball. We toss a fair coin to choose one of the two urns. 
+    \Question We draw a ball from the chosen urn. What is the probability that you extract a red ball? (Hint: Use the total probability formula)
+    \Question Now we extract a ball, reinsert it in the urn, and draw again another ball from the same urn. Are the event "The first ball extracted is red" and the event "The second  ball  extracted is red" independent? 
 
 
-	\Exercise (Extractions without replacement)  
+	\Exercise (Extractions with replacement) You extract 3 balls from an urn using the following procedure: 1) You extract a ball (with uniform probability) 2) You reinsert the ball and extract another one \emph{independently} (nd once again with uniform probability)  3) You reinsert the ball and extract another one independently from the other two extractions (and once again, with uniform probability). In the urn there are 4 red balls and 5 green balls.
+	\Question What is the probability that at least one of them is red. Hint: Consider 
+	\bel{d:Xi}{ X_i \begin{cases} 1 & \textrm{if the ith ball is red} \\
+	            0 & \textrm{ otherwise,}
+	\end{cases}}
+	and write in terms of $X_i$ the complementary event. Use then the independence. 
+	\Question What is the probability that you exctract exactly 1 red ball? Hint: the event is composed by 3 elementary events.
+	
+	\Exercise (Extractions without replacement) You extract 3 balls from an urn using the following procedure: 1) You extract a ball (with uniform probability) and you don't replace it 2) You extract another ball ( with uniform probability from the remaining ones) and you don't replace it 3) You extract a third  ball (with uniform probability from the remaining ones. In the urn there are 4 red balls and 5 blue balls
+	\Question What is the probability that at least one of them is red? Hint: the same hint as in the previous exercise.
+	\Question What is the probability that exactly one of them is red? Hint: the same hint as in the previous exercise. 
 
-	\Exercise (Conditional Probability: Medical testing) 
+	\Exercise (\cite{daipra} Exercise 1.34) Anton from Milan and Jonathan from Rome decide to meet in Rome. Anton is an irresolute person and decides to actually take the train to Rome at the last moment, tossing a fair coin: if it gives heads, then he will go to Rome. Otherwise, he will stay at home. If he decides to go to Rome, he rolls a die to decide which one of the 6 possible trains he will take. At the train station in Rome, Jonathan observes that Anton is not in the first 5 trains. What is the probability that Anton is in the last train?   
 
 	\Exercise  (Conditional Probability) 
 
-	\Exercise (Conditional Probability with extractions) 
-
-	\Exercise Bernoulli trials 
+	\Exercise We toss independently 6 times an unfair coin. The sample space of the experiment is $\Omega=\{(x_1,...,x_6)\,, x_i\in\{0,1\}, i=1,...6\}$, where, for instance, (1,0,1,0,1,1) denotes the event "The first toss gave heads, the second tails, the third heads,..., the sixth heads". We denote by $X_i$ the random number defined by 
+\bel{}{X_i=\begin{cases}
+ 1 & \textrm{ if the i-th toss gave heads}\\
+ 0 & \textrm{ if the i-th toss gave tails}.
+\end{cases}.}
+Thus, the event $(X_i=1)$ is the event "The i-th coin toss gave heads". 
+Denote $p$ (you can take $p=2/3$, if you prefer) the probability that the coin gives heads. This means that $\mathbb{P}(X_i=1)=p$ for each $i=1,...,6$.
+\begin{itemize}
+    \item Compute the probability of the event A=" There total number of heads is 1".  
+    \item Conditional to the event A defined above, what is the probability of the events 
+    ($X_i=1$), for $i=1,..6$? 
+\end{itemize}
+Hint: Look at Section \ref{s:bernoulli}.
 	
 
 \end{ExerciseList}
