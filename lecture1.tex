@@ -440,7 +440,7 @@ To every proposition we associate a subset of the sample space, as we did with t
 
 \end{ExerciseList}
 
-\section{Exercises}
+\subsection{Exercises}
 
 
 \begin{ExerciseList}
@@ -1258,11 +1258,32 @@ We now need to observe that the $\mathbb{P}(X_k=1|X_{k-1}=1...X_1=1)=(n-m-(k-1))
 
 \end{ExerciseList}
 
-\section{ Bernoulli Trials}
-\label{s:bernoulli}
-\comment{The aim of this section is to define the Bernoulli trials (coin tosses) and to make clear where do we use the hypothesis of independence and the hypothesis that we are throwing identical coins.}
-\subsection{Independent bernoulli trials}
-We treat again coin tosses, this time with a different notation. Let's start with two identical and independent coin tosses, where the sample space is $\Omega=\{0,1\}^2=\{(0,0),(0,1),(1,0),(1,1)\}=\{(x_1,x_2), \,x_1,x_2\in\{0,1\}\}$, and define 
+\section{ Bernoulli Trials} \label{s:bernoulli}
+
+We now introduce the widely used notion of Bernoulli trials. 
+
+\subsection{Independent Bernoulli Trials}
+
+\paragraph{Two Bernoulli Independent Trials} 
+Imagine tossing two \emph{unfair} coins of success parameter $p$. This means that the sample space is $\Omega = \{00,01,10,11\}$ and that $\mathbb{P}$("The first coin gave heads")=p and that $\mathbb{P}($"The second coin gave heads")=p. We introduce the following notation
+
+
+\bel{d:x1}{
+		 X_1 = \begin{cases}
+			 1 &  \textrm{ if the first toss is heads}\\
+		 	0 & \textrm{ otherwise }\\
+		 \end{cases}}
+
+	 \bel{d:x2}{
+		 X_1 = \begin{cases}
+			 1 &  \textrm{ if the second toss is heads}\\
+		 	0 & \textrm{ otherwise }
+		 \end{cases}}
+
+
+We treat again coin tosses, this time with a different notation. Let's start with two identical and independent coin tosses, where the sample space is $\Omega=\{0,1\}^2=\{(0,0),(0,1),(1,0),(1,1)\}=\{(x_1,x_2), \,x_1,x_2\in\{0,1\}\}$, and define  
+
+
 \bel{}{X_1=\begin{cases}
 1 & \textrm{ if the first toss gave heads}\\
 0 & \textrm{ if the first toss gave tails}
@@ -1272,13 +1293,88 @@ and
 1 & \textrm{ if the second toss gave heads}\\
 0 & \textrm{ if the second toss gave tails}.
 \end{cases}}
+We can write the elementaru events 00,10,01,11 using $X_1$ and $X_2$ in the following way: $00 = (X_1 = 0)\cap (X_2 = 0)$,..., $11 = (X_1 =1 ) \cap (X_2 = 1) $. When we want to write the general element of $\Omega$, we write $x_1x_2 = (X_1 = x_1) \cap (X_2 = x_2) $, where $x_1$,$x_2\in \{0,1\}$ are the digits of the string $x_1x_2$. \\
+The condition that the coins are unfair coins of parameter $p$ by 
+\bel{e:success2}{\mathbb{P}(X_1=1)=p\,\,\,\, \mathbb{P}(X_2 = 1) = p.}
+Following what said in Section \ref{ss:2exp}, we can compute write the probabilities of the elementary events of $\Omega$ by conditioning on the first coin toss 
+
+\bel{}{\mathbb{P}(10) & =\mathbb{P}(X_1=1,X_2=0) \\
+ & = \frac{\mathbb{P}(X_1=1,X_2=0)}{\mathbb{P}(X_1=1)}\mathbb{P}(X_1=1)=\mathbb{P}(X_2=0|X_1=1)\mathbb{P}(X_1=1).}
+Now we can make use of the hypothesis that the first and the second coin tosses are independent. This hypothesis, in this case, is that $\mathbb{P}(X_2=0|X_1 = 1) =\mathbb{P}( X_1 = 1)$.
+Thus  
+\bel{}{\mathbb{P}(10) & = \mathbb{P}((X_1 =1 ) \cap (X_2 = 0 ) ) \\
+ & = \frac{\mathbb{P}( (X_1 = 1) \cap (X_2 = 0))}{\mathbb{P}(X_1 = 1)}\mathbb{P}(x_1 = 1)= \mathbb{P}(X_2 = 0|X_1 = 1) \mathbb{P}(X_1 = 1) = (1-p)p, }
+ where in the last step we used \ref{e:success2}.
+ In general
+\bel{}{\mathbb{P}(x_1x_2) & =\mathbb{P}((X_1=x_1) \cap (X_2=x_2)) \\
+ & = \frac{\mathbb{P}((X_1=x_1)\cap (X_2=x_2))}{\mathbb{P}(X_1=x_1)}\mathbb{P}(X_1=x_1)=\mathbb{P}(X_2=x_2|X_1=x_1)\mathbb{P}(X_1=x_1). }
+We now make use of the independence hypothesis, which can be mathematically written as 
+\bel{e:independence2}{\mathbb{P}((X_2 = x_2 |X_1 = x_1) = \mathbb{P}( X_2 = x_2), }
+to conclude that 
+\bel{e:indber2}{\mathbb{P}(x_1x_2)= \mathbb{P}(X_1 = x_1) \mathbb{P}(X_2 = x_2).}
+Now we introduce a useful notation  that helps us to rewrite the probability 
+\bel{e:auxprob2}{\mathbb{P}(X_1 = x_1)= \begin{cases} p  & \textrm{ if $x_1 = 1$} \\ 1-p & \textrm{ if $x_1 = 0$ } \end{cases}.}
+	We note that the expression $p^{x_1}( 1- p)^{1-x_1}$  is $p$ if $x_1 = 1$, and is $(1-p)$ if $x_2 = 0$, which is exactly the right hand side of \ref{e:auxprob2}. Thus
+	\bel{e:expr2}{\mathbb{P}( X_1 = x_1) = p^{x_1}(1-p)^{1-x_1)}= \begin{cases} p & \textrm{if $x_1 =1$ } \\ 1-p & \textrm{ if $x_1 = 0$.}\end{cases}}
+		Plugging the above \eqref{e:expr2} into \eqref{e:indber2} we obtain 
+		\bel{e:bernoulli2}{\mathbb{P}(x_1x_2) = \mathbb{P}(X_1 = x_1) \mathbb{P}(X_2 = x_2 ) = p^{x_1}(1.p)^{1-x_1}p^{x_2}(1-p)^{1-x_2}= p ^{x_1 + x_2 }(1-p )^{2-(x_1+ x_2)}.}
+
+We conclude by noting that if $p=1/2$ the each outcome $x_1x_2$ has the same probability equal to 1/4. 
+
+\paragraph{Three Independent Bernoulli Trials.} Assume that now we toss 3 times a coin which has success probability $p$. This means that the sample space is $\Omega=\{(1,1,1),(1,1,0),...,(0,0,0)\}=\{0,1\}^3=\{(x_1,x_2,x_3)\,,\,x_i\in\{0,1\}\}$, and that, if we define
+\bel{}{X_i=\begin{cases}
+1 & \textrm{ if the i-th toss gave heads}\\
+0 & \textrm{ if the i-th toss gave tails}
+\end{cases},}
+then $\mathbb{P}(X_1 = 1) = \mathbb{P}(X_2 = 1) = \mathbb{P}( X_3 = 1) = p$. Repeating the same computations we write
+\bel{e:genbernoulli3}{\mathbb{P}(x_1x_2x_3) & =\mathbb{P}((X_1=x_1)\cap (X_2=x_2) \cap (X_3=x_3)) \\
+& = \frac{\mathbb{P}((X_1=x_1)\cap (X_2=x_2) \cap (X_3=x_3))}{\mathbb{P}((X_1=x_1)\cap (X_2=x_2))}\frac{\mathbb{P}((X_1=x_1)\cap (X_2=x_2))}{\mathbb{P}(X_1=x_1)}\mathbb{P}(X_1=x_1) \\ & =\mathbb{P}(X_3=x_3|(X_2=x_2)\cap (X_1=x_1))\mathbb{P}(X_2=x_2|X_1=x_1)\mathbb{P}(X_1=x_1).}
+The hypothesis of independence of the 3 tosses is given mathematically by 
+\bel{e:indber3}{\mathbb{P}(X_2=x_2|X_1=x_1)=\mathbb{P}(X_2=x_2 \,\,\,\,\mathbb{P}(X_3=x_3|X_2=x2,X_1=x_1)=\mathbb{P}(X_3=x_3),} that is, the result of the third coin toss does not depend from the first two and the result of the second one does not depend on the first one. Substituting \eqref{e:indber3} into \eqref{e:genbernoulli3}, we obtain
+\bel{}{\mathbb{P}(x_1x_2x_3) & = \mathbb{P}(X_3 = x_3)| (X_1 = x_1)\cap (X_2 =x_2) ) \mathbb{P}(X_2 = x_2| X_1 = x_1)\mathbb{P}(X_1 = x_1) \\
+ & =\mathbb{P}(x_1 = x_1)\mathbb{P}(X_2 = x_2)\mathbb{P}(X_3 =x_3)}
+ Now using that $\mathbb{P}(X_i = x_i) = p^{x_i}(1-p)^{1-x_i}$ we obtain that
+ \bel{}{\mathbb{P}(x_1x_2x_3)= p^{x_1}(1-p)^{1-x_1} p^{x_2}(1-p)^{1-x_2} p^{x_3}(1-p)^{1-x_3} = p^{x_1+x_2+x_3}(1-p)^{3-(x_1 + x_2 + x_3)}.}
+ Note again that if $p=1/2$ then each elementary event has the same probability equal to $1/8$. 
+
+ 
+
+ 
+ \begin{ExerciseList}
+
+	 \Exercise You toss three unfair coins independently. Define the random number $H$ as the number of heads that you observe. Compute the probabilities of the events $( H = 0)$, $(H = 1)$, $(H =2) $ and $(H = 3)$. If you prefer, you can substitute $p = 0.8$   
+ 
+
+
+ \end{ExerciseList}
+
+ \paragraph{ n Independent Bernoulli Trials.}
+We now consider $n$ coin tosses each of which have probability of success $p$. This means that $\Omega= \{x_1...x_n\,,\, x_i\in\{0,1\},i=1,...,n\}$ and that, defining
+
+\bel{}{X_i=\begin{cases}
+1 & \textrm{ if the i-th toss gave heads}\\
+0 & \textrm{ if the i-th toss gave tails}
+\end{cases},}
+then $\mathbb{P}(X_i = 1) = p$ for each $i=1,...,n$. Repeating the same computations as above we write 
+\bel{e:genbernoullin}{\mathbb{P}(x_1...x_n) & =\mathbb{P}((X_1 = x_n)\cap ...\cap (X_3=x_3)) \\
+& = \frac{\mathbb{P}((X_1=x_1)\cap ...\cap (X_n=x_n))}{\mathbb{P}((X_1=x_1)\cap ...\cap (X_{n-1}=x_{n-1}))} \frac{\mathbb{P}((X_1=x_1)\cap...\cap (X_{n-1}  x_{n-1}))}{\mathbb{P}((X_1=x_1)\cap ...\cap (X_{n-2}= x_{n-2})}...\frac{\mathbb{P}((X_1 = x_1) \cap (X_2 = x_2) }{\mathbb{P}(X_1 =x_1) } \mathbb{P}(X_1=x_1))\\ & =\mathbb{P}(X_n=x_n|(X_n=x_n)\cap ...\cap X_1=x_1)...\mathbb{P}(X_2=x_2|X_1=x_1)\mathbb{P}(X_1=x_1).}
+The hypothesis of independence of the 3 tosses is given mathematically by 
+\bel{e:indber3}{\mathbb{P}(X_2=x_2|X_1=x_1)=\mathbb{P}(X_2=x_2 \,\,\,\,\mathbb{P}(X_3=x_3|X_2=x2,X_1=x_1)=\mathbb{P}(X_3=x_3),} that is, the result of the third coin toss does not depend from the first two and the result of the second one does not depend on the first one. Substituting \eqref{e:indber3} into \eqref{e:genbernoulli3}, we obtain
+\bel{}{\mathbb{P}(x_1x_2x_3) & = \mathbb{P}(X_3 = x_3)| (X_1 = x_1)\cap (X_2 =x_2) ) \mathbb{P}(X_2 = x_2| X_1 = x_1)\mathbb{P}(X_1 = x_1) \\
+ & =\mathbb{P}(x_1 = x_1)\mathbb{P}(X_2 = x_2)\mathbb{P}(X_3 =x_3)}
+ Now using that $\mathbb{P}(X_i = x_i) = p^{x_i}(1-p)^{1-x_i}$ we obtain that
+ \bel{}{\mathbb{P}(x_1x_2x_3)= p^{x_1}(1-p)^{1-x_1} p^{x_2}(1-p)^{1-x_2} p^{x_3}(1-p)^{1-x_3} = p^{x_1+x_2+x_3}(1-p)^{3-(x_1 + x_2 + x_3)}.}
+ Note again that if $p=1/2$ then each elementary event has the same probability equal to $1/8$. 
+
+
 That is, $X_1$ is the result of the first coin toss and $X_2$ is the result of the second. The event "The second toss gave tails"$\{(0,0),(1,0)\}$ can be written as $(X_2=0)$,The elementary event $(1,0)$ can be written as $(X_1=1)\cap (X_2=0)=(X_1=1,X_2=0)$, and the event $(x_1,x_2)$ can be written as $(X_1=x_1)\cap (X_2=x_2)=(X_1=x_1,X_2=x_2)$, where $x_1,x_2\in\{0,1\}$.
+
 By hypothesis that we throw \emph{identical} coins, the probability of having heads is the same for the two coins, 
 $$\mathbb{P}("\textrm{The first coin gave heads}")=\mathbb{P}("\textrm{The first coin gave heads}")=p.$$
 Using the above notation we can say the same thing in a more compact form 
 \bel{}{\mathbb{P}(X_1=1)=\mathbb{P}(X_2=1)=p\in(0,1)\\
 \mathbb{P}(X_1=0)=\mathbb{P}(x_2=0)=1-p.}
-\comment{The hypothesis of identical coins are the equality $\mathbb{P}(X_1=1)=\mathbb{P}(X_2=1)$ and $\mathbb{P}(X_1=0)=\mathbb{P}(X_2=0)$}\\
+\commento{The hypothesis of identical coins are the equality $\mathbb{P}(X_1=1)=\mathbb{P}(X_2=1)$ and $\mathbb{P}(X_1=0)=\mathbb{P}(X_2=0)$}\\
 We can use the ideas of the previous section to calculate the probability $\mathbb{P}$ on $\Omega$. For example 
 \bel{}{\mathbb{P}((1,0))=\mathbb{P}(X_1=1,X_2=0)=\frac{\mathbb{P}(X_1=1,X_2=0)}{\mathbb{P}(X_1=1)}\mathbb{P}(X_1=1)=\mathbb{P}(X_2=0|X_1=1)\mathbb{P}(X_1=1).}
 Now we use the hypothesis of \emph{independent} trials: $\mathbb{P}(X_2=0|X_1=1)=\mathbb{P}(X_2=0)=1-p$. Thus,
@@ -1370,14 +1466,6 @@ You can check that the \eqref{e:notation2} takes the value $p$ if $x_1 = 1$ and 
   & = \mathbb{P}(X_3 = x_3) \mathbb{P}(X_2 =x_2) \mathbb{P}(X_1 = x_1) = p^{x_3}(1-p)^{1-x_3}  p^{x_2}(1-p)^{1-x_2}p^{x_1}(1-p)^{1-x_1} = p^{x_1+x_2+x_3}(1-p)^{3-(x_1+x_2+x_3)} }
 
  Once again, in the case of a fair coin $p=1/2$, the probability of each outcome is the same and $p = 1/2^3$. 
- 
- \begin{ExerciseList}
-
-	 \Exercise You toss three unfair coins independently. Define the random number $H$ as the number of heads that you observe. Compute the probabilities of the events $( H = 0)$, $(H = 1)$, $(H =2) $ and $(H = 3)$. If you prefer, you can substitute $p = 0.8$   
- 
-
-
- \end{ExerciseList}
 
 
 We can repeat the same reasoning for $n$ Bernoulli trials to obtain 
